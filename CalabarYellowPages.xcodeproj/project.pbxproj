@@ -1,0 +1,512 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		CB6C8E5A4ACCD36F1F43A3A6 /* Pods_CalabarYellowPages.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 96D8B296F30C20A0E6BA7669 /* Pods_CalabarYellowPages.framework */; };
+		F602D3BD1DE08CFC00AB0DD6 /* TableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = F602D3BC1DE08CFC00AB0DD6 /* TableViewCell.swift */; };
+		F602D3BF1DE08D5900AB0DD6 /* DataModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = F602D3BE1DE08D5900AB0DD6 /* DataModel.swift */; };
+		F602D3C31DE08EDA00AB0DD6 /* TableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F602D3C21DE08EDA00AB0DD6 /* TableViewController.swift */; };
+		F602D3C51DE0C2AA00AB0DD6 /* PlusViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = F602D3C41DE0C2AA00AB0DD6 /* PlusViewCell.swift */; };
+		F602D3C71DE0C38E00AB0DD6 /* PlusTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F602D3C61DE0C38E00AB0DD6 /* PlusTableViewController.swift */; };
+		F64228F41DEECBB000AA870A /* SearchViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F64228F31DEECBB000AA870A /* SearchViewController.swift */; };
+		F677DB7C1DCF808800DD2A84 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F677DB7B1DCF808800DD2A84 /* AppDelegate.swift */; };
+		F677DB831DCF808800DD2A84 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F677DB811DCF808800DD2A84 /* Main.storyboard */; };
+		F677DB851DCF808800DD2A84 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F677DB841DCF808800DD2A84 /* Assets.xcassets */; };
+		F677DB881DCF808800DD2A84 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F677DB861DCF808800DD2A84 /* LaunchScreen.storyboard */; };
+		F6CBE7571DF9DD77003B5DAC /* Login.swift in Sources */ = {isa = PBXBuildFile; fileRef = F6CBE7561DF9DD77003B5DAC /* Login.swift */; };
+		F6CBE7591DF9DDED003B5DAC /* TabBar.swift in Sources */ = {isa = PBXBuildFile; fileRef = F6CBE7581DF9DDED003B5DAC /* TabBar.swift */; };
+		F6CBE7841DFAEC40003B5DAC /* CollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = F6CBE7831DFAEC40003B5DAC /* CollectionViewCell.swift */; };
+		F6D2658F1DE36A360032DC64 /* CategoryListViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = F6D2658E1DE36A360032DC64 /* CategoryListViewCell.swift */; };
+		F6D265911DE36BCC0032DC64 /* CategoryListController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F6D265901DE36BCC0032DC64 /* CategoryListController.swift */; };
+		F6DE6E261DF4CC7A002D20D2 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = F6DE6E251DF4CC7A002D20D2 /* GoogleService-Info.plist */; };
+		F6E827611DE7AE5F004845B6 /* PlusViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F6E827601DE7AE5F004845B6 /* PlusViewController.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		96D8B296F30C20A0E6BA7669 /* Pods_CalabarYellowPages.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_CalabarYellowPages.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		A12FDA0AA71DEA8226AE1C9B /* Pods-CalabarYellowPages.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CalabarYellowPages.debug.xcconfig"; path = "Pods/Target Support Files/Pods-CalabarYellowPages/Pods-CalabarYellowPages.debug.xcconfig"; sourceTree = "<group>"; };
+		A19091C9D045D5CB05C1F5E7 /* Pods-CalabarYellowPages.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CalabarYellowPages.release.xcconfig"; path = "Pods/Target Support Files/Pods-CalabarYellowPages/Pods-CalabarYellowPages.release.xcconfig"; sourceTree = "<group>"; };
+		F602D3BC1DE08CFC00AB0DD6 /* TableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TableViewCell.swift; sourceTree = "<group>"; };
+		F602D3BE1DE08D5900AB0DD6 /* DataModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DataModel.swift; sourceTree = "<group>"; };
+		F602D3C21DE08EDA00AB0DD6 /* TableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TableViewController.swift; sourceTree = "<group>"; };
+		F602D3C41DE0C2AA00AB0DD6 /* PlusViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PlusViewCell.swift; sourceTree = "<group>"; };
+		F602D3C61DE0C38E00AB0DD6 /* PlusTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PlusTableViewController.swift; sourceTree = "<group>"; };
+		F605ACF11E217D8A0099373C /* CoreData.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreData.framework; path = System/Library/Frameworks/CoreData.framework; sourceTree = SDKROOT; };
+		F605ACF31E218F720099373C /* Bolts.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Bolts.framework; path = ../../Documents/FacebookSDK/Bolts.framework; sourceTree = "<group>"; };
+		F605ACF41E218F720099373C /* FBSDKCoreKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = FBSDKCoreKit.framework; path = ../../Documents/FacebookSDK/FBSDKCoreKit.framework; sourceTree = "<group>"; };
+		F605ACF51E218F720099373C /* FBSDKLoginKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = FBSDKLoginKit.framework; path = ../../Documents/FacebookSDK/FBSDKLoginKit.framework; sourceTree = "<group>"; };
+		F605ACF61E218F720099373C /* FBSDKShareKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = FBSDKShareKit.framework; path = ../../Documents/FacebookSDK/FBSDKShareKit.framework; sourceTree = "<group>"; };
+		F6067BE21E1B0925009F349E /* Bolts.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = Bolts.framework; sourceTree = "<group>"; };
+		F6067BE31E1B0925009F349E /* FBSDKCoreKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = FBSDKCoreKit.framework; sourceTree = "<group>"; };
+		F6067BE41E1B0925009F349E /* FBSDKLoginKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = FBSDKLoginKit.framework; sourceTree = "<group>"; };
+		F6067BE51E1B0925009F349E /* FBSDKShareKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = FBSDKShareKit.framework; sourceTree = "<group>"; };
+		F64228F31DEECBB000AA870A /* SearchViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SearchViewController.swift; sourceTree = "<group>"; };
+		F676022B1E1EF557001228B5 /* CalabarYellowPages.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = CalabarYellowPages.entitlements; sourceTree = "<group>"; };
+		F677DB781DCF808800DD2A84 /* CalabarYellowPages.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CalabarYellowPages.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		F677DB7B1DCF808800DD2A84 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		F677DB821DCF808800DD2A84 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		F677DB841DCF808800DD2A84 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		F677DB871DCF808800DD2A84 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		F677DB891DCF808800DD2A84 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		F6CBE7561DF9DD77003B5DAC /* Login.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Login.swift; sourceTree = "<group>"; };
+		F6CBE7581DF9DDED003B5DAC /* TabBar.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TabBar.swift; sourceTree = "<group>"; };
+		F6CBE7831DFAEC40003B5DAC /* CollectionViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = CollectionViewCell.swift; path = ../CollectionViewCell.swift; sourceTree = "<group>"; };
+		F6D2658E1DE36A360032DC64 /* CategoryListViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CategoryListViewCell.swift; sourceTree = "<group>"; };
+		F6D265901DE36BCC0032DC64 /* CategoryListController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CategoryListController.swift; sourceTree = "<group>"; };
+		F6DE6E251DF4CC7A002D20D2 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
+		F6DE6E561DF4DA74002D20D2 /* CalabarYellowPages-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "CalabarYellowPages-Bridging-Header.h"; sourceTree = "<group>"; };
+		F6E827601DE7AE5F004845B6 /* PlusViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PlusViewController.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		F677DB751DCF808800DD2A84 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				CB6C8E5A4ACCD36F1F43A3A6 /* Pods_CalabarYellowPages.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		446371CE5E97D9B8B54C0CFA /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				A12FDA0AA71DEA8226AE1C9B /* Pods-CalabarYellowPages.debug.xcconfig */,
+				A19091C9D045D5CB05C1F5E7 /* Pods-CalabarYellowPages.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		6019458800D4DCA9D8B7276F /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				F605ACF31E218F720099373C /* Bolts.framework */,
+				F605ACF41E218F720099373C /* FBSDKCoreKit.framework */,
+				F605ACF51E218F720099373C /* FBSDKLoginKit.framework */,
+				F605ACF61E218F720099373C /* FBSDKShareKit.framework */,
+				F605ACF11E217D8A0099373C /* CoreData.framework */,
+				F6067BE21E1B0925009F349E /* Bolts.framework */,
+				F6067BE31E1B0925009F349E /* FBSDKCoreKit.framework */,
+				F6067BE41E1B0925009F349E /* FBSDKLoginKit.framework */,
+				F6067BE51E1B0925009F349E /* FBSDKShareKit.framework */,
+				96D8B296F30C20A0E6BA7669 /* Pods_CalabarYellowPages.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		F677DB6F1DCF808800DD2A84 = {
+			isa = PBXGroup;
+			children = (
+				F677DB7A1DCF808800DD2A84 /* CalabarYellowPages */,
+				F677DB791DCF808800DD2A84 /* Products */,
+				446371CE5E97D9B8B54C0CFA /* Pods */,
+				6019458800D4DCA9D8B7276F /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		F677DB791DCF808800DD2A84 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				F677DB781DCF808800DD2A84 /* CalabarYellowPages.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		F677DB7A1DCF808800DD2A84 /* CalabarYellowPages */ = {
+			isa = PBXGroup;
+			children = (
+				F676022B1E1EF557001228B5 /* CalabarYellowPages.entitlements */,
+				F6CBE7831DFAEC40003B5DAC /* CollectionViewCell.swift */,
+				F6DE6E251DF4CC7A002D20D2 /* GoogleService-Info.plist */,
+				F677DB7B1DCF808800DD2A84 /* AppDelegate.swift */,
+				F677DB811DCF808800DD2A84 /* Main.storyboard */,
+				F677DB841DCF808800DD2A84 /* Assets.xcassets */,
+				F677DB861DCF808800DD2A84 /* LaunchScreen.storyboard */,
+				F677DB891DCF808800DD2A84 /* Info.plist */,
+				F602D3BC1DE08CFC00AB0DD6 /* TableViewCell.swift */,
+				F602D3BE1DE08D5900AB0DD6 /* DataModel.swift */,
+				F602D3C21DE08EDA00AB0DD6 /* TableViewController.swift */,
+				F602D3C41DE0C2AA00AB0DD6 /* PlusViewCell.swift */,
+				F602D3C61DE0C38E00AB0DD6 /* PlusTableViewController.swift */,
+				F6D2658E1DE36A360032DC64 /* CategoryListViewCell.swift */,
+				F6D265901DE36BCC0032DC64 /* CategoryListController.swift */,
+				F6E827601DE7AE5F004845B6 /* PlusViewController.swift */,
+				F64228F31DEECBB000AA870A /* SearchViewController.swift */,
+				F6DE6E561DF4DA74002D20D2 /* CalabarYellowPages-Bridging-Header.h */,
+				F6CBE7561DF9DD77003B5DAC /* Login.swift */,
+				F6CBE7581DF9DDED003B5DAC /* TabBar.swift */,
+			);
+			path = CalabarYellowPages;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		F677DB771DCF808800DD2A84 /* CalabarYellowPages */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = F677DB8C1DCF808800DD2A84 /* Build configuration list for PBXNativeTarget "CalabarYellowPages" */;
+			buildPhases = (
+				547474D13EC33DA4CFDE4D56 /* [CP] Check Pods Manifest.lock */,
+				F677DB741DCF808800DD2A84 /* Sources */,
+				F677DB751DCF808800DD2A84 /* Frameworks */,
+				F677DB761DCF808800DD2A84 /* Resources */,
+				DB7E4F4264AA25069045E5D7 /* [CP] Embed Pods Frameworks */,
+				1F0FC40979256D65EB936214 /* [CP] Copy Pods Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = CalabarYellowPages;
+			productName = CalabarYellowPages;
+			productReference = F677DB781DCF808800DD2A84 /* CalabarYellowPages.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		F677DB701DCF808800DD2A84 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0720;
+				LastUpgradeCheck = 0820;
+				ORGANIZATIONNAME = calabarpages;
+				TargetAttributes = {
+					F677DB771DCF808800DD2A84 = {
+						CreatedOnToolsVersion = 7.2.1;
+						DevelopmentTeam = 2CVRQ34ZA9;
+						LastSwiftMigration = 0820;
+						ProvisioningStyle = Manual;
+						SystemCapabilities = {
+							com.apple.GameCenter = {
+								enabled = 0;
+							};
+							com.apple.Keychain = {
+								enabled = 0;
+							};
+							com.apple.SafariKeychain = {
+								enabled = 0;
+							};
+						};
+					};
+				};
+			};
+			buildConfigurationList = F677DB731DCF808800DD2A84 /* Build configuration list for PBXProject "CalabarYellowPages" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = F677DB6F1DCF808800DD2A84;
+			productRefGroup = F677DB791DCF808800DD2A84 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				F677DB771DCF808800DD2A84 /* CalabarYellowPages */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		F677DB761DCF808800DD2A84 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F677DB881DCF808800DD2A84 /* LaunchScreen.storyboard in Resources */,
+				F6DE6E261DF4CC7A002D20D2 /* GoogleService-Info.plist in Resources */,
+				F677DB851DCF808800DD2A84 /* Assets.xcassets in Resources */,
+				F677DB831DCF808800DD2A84 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		1F0FC40979256D65EB936214 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-CalabarYellowPages/Pods-CalabarYellowPages-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		547474D13EC33DA4CFDE4D56 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		DB7E4F4264AA25069045E5D7 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-CalabarYellowPages/Pods-CalabarYellowPages-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		F677DB741DCF808800DD2A84 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F6D2658F1DE36A360032DC64 /* CategoryListViewCell.swift in Sources */,
+				F64228F41DEECBB000AA870A /* SearchViewController.swift in Sources */,
+				F6CBE7571DF9DD77003B5DAC /* Login.swift in Sources */,
+				F677DB7C1DCF808800DD2A84 /* AppDelegate.swift in Sources */,
+				F602D3C71DE0C38E00AB0DD6 /* PlusTableViewController.swift in Sources */,
+				F602D3BD1DE08CFC00AB0DD6 /* TableViewCell.swift in Sources */,
+				F602D3C51DE0C2AA00AB0DD6 /* PlusViewCell.swift in Sources */,
+				F6D265911DE36BCC0032DC64 /* CategoryListController.swift in Sources */,
+				F6CBE7841DFAEC40003B5DAC /* CollectionViewCell.swift in Sources */,
+				F6CBE7591DF9DDED003B5DAC /* TabBar.swift in Sources */,
+				F602D3C31DE08EDA00AB0DD6 /* TableViewController.swift in Sources */,
+				F602D3BF1DE08D5900AB0DD6 /* DataModel.swift in Sources */,
+				F6E827611DE7AE5F004845B6 /* PlusViewController.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		F677DB811DCF808800DD2A84 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				F677DB821DCF808800DD2A84 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		F677DB861DCF808800DD2A84 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				F677DB871DCF808800DD2A84 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		F677DB8A1DCF808800DD2A84 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer: Mmumene Enyieko Egbai (P7L88RL69U)";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_BITCODE = YES;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.2;
+				MACH_O_TYPE = mh_execute;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		F677DB8B1DCF808800DD2A84 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Distribution: calabar pages (2CVRQ34ZA9)";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_BITCODE = YES;
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.2;
+				MACH_O_TYPE = mh_execute;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		F677DB8D1DCF808800DD2A84 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = A12FDA0AA71DEA8226AE1C9B /* Pods-CalabarYellowPages.debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = "Brand Assets";
+				CLANG_ENABLE_MODULES = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer: Mmumene Enyieko Egbai (P7L88RL69U)";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer: Mmumene Enyieko Egbai (P7L88RL69U)";
+				DEVELOPMENT_TEAM = 2CVRQ34ZA9;
+				ENABLE_BITCODE = NO;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)",
+					"$(PROJECT_DIR)/CalabarYellowPages",
+				);
+				INFOPLIST_FILE = CalabarYellowPages/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.2;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				MACH_O_TYPE = mh_execute;
+				OTHER_LDFLAGS = "";
+				PRODUCT_BUNDLE_IDENTIFIER = com.calabarpages.CalabarYellowPages;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "8800a6e5-dfc8-46a2-a453-5ae490f5d66c";
+				PROVISIONING_PROFILE_SPECIFIER = development;
+				STRIP_INSTALLED_PRODUCT = NO;
+				SWIFT_OBJC_BRIDGING_HEADER = "CalabarYellowPages/CalabarYellowPages-Bridging-Header.h";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 3.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				"USER_HEADER_SEARCH_PATHS[arch=*]" = "$(inherited)";
+				VALID_ARCHS = "arm64 armv7";
+			};
+			name = Debug;
+		};
+		F677DB8E1DCF808800DD2A84 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = A19091C9D045D5CB05C1F5E7 /* Pods-CalabarYellowPages.release.xcconfig */;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = "Brand Assets";
+				CLANG_ENABLE_MODULES = YES;
+				CODE_SIGN_IDENTITY = "iPhone Distribution: calabar pages (2CVRQ34ZA9)";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Distribution: calabar pages (2CVRQ34ZA9)";
+				DEVELOPMENT_TEAM = 2CVRQ34ZA9;
+				ENABLE_BITCODE = NO;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)",
+					"$(PROJECT_DIR)/CalabarYellowPages",
+				);
+				INFOPLIST_FILE = CalabarYellowPages/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.2;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				MACH_O_TYPE = mh_execute;
+				OTHER_LDFLAGS = "";
+				PRODUCT_BUNDLE_IDENTIFIER = com.calabarpages.CalabarYellowPages;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "3a90cada-3f50-483b-a0cd-8253ecd9ff21";
+				PROVISIONING_PROFILE_SPECIFIER = "CalabarYellowPages AppStore";
+				STRIP_INSTALLED_PRODUCT = NO;
+				SWIFT_OBJC_BRIDGING_HEADER = "CalabarYellowPages/CalabarYellowPages-Bridging-Header.h";
+				SWIFT_VERSION = 3.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				"USER_HEADER_SEARCH_PATHS[arch=*]" = "$(inherited)";
+				VALID_ARCHS = "arm64 armv7";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		F677DB731DCF808800DD2A84 /* Build configuration list for PBXProject "CalabarYellowPages" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				F677DB8A1DCF808800DD2A84 /* Debug */,
+				F677DB8B1DCF808800DD2A84 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		F677DB8C1DCF808800DD2A84 /* Build configuration list for PBXNativeTarget "CalabarYellowPages" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				F677DB8D1DCF808800DD2A84 /* Debug */,
+				F677DB8E1DCF808800DD2A84 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = F677DB701DCF808800DD2A84 /* Project object */;
+}
