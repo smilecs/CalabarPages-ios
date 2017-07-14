@@ -83,15 +83,6 @@ class CategoryListController: UIViewController, UITableViewDelegate, UITableView
         let data = TableData[indexPath.row]
         var cell:CategoryListViewCell
         switch data.Type{
-            case "false":
-                cell = tableView.dequeueReusableCell(withIdentifier: "cell", for: indexPath) as! CategoryListViewCell
-                
-                cell.Title?.text = data.Title
-                cell.Address?.text = data.Address
-                cell.WorkDays?.text = data.WorkDays
-                cell.Phone?.text = data.Phone
-                cell.Specialisation?.text = data.Specialisation
-            break
             case "listing":
                 cell = tableView.dequeueReusableCell(withIdentifier: "cell", for: indexPath) as! CategoryListViewCell
                 if(data.IsPlus == "true"){
@@ -101,12 +92,18 @@ class CategoryListController: UIViewController, UITableViewDelegate, UITableView
                         
                     }
                 }
-                
                 cell.Title?.text = data.Title
                 cell.Address?.text = data.Address
                 cell.WorkDays?.text = data.WorkDays
                 cell.Phone?.text = data.Phone
                 cell.Specialisation?.text = data.Specialisation
+                for view in cell.subviews{
+                    if let label = view as? UILabel{
+                        if label.text!.isEmpty{
+                            label.isHidden = true
+                        }
+                    }
+                }
             break
         default:
             cell = tableView.dequeueReusableCell(withIdentifier: "advert", for: indexPath) as! CategoryListViewCell

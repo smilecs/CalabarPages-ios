@@ -10,13 +10,13 @@ import UIKit
 
 
 class SearchViewController: UIViewController, UISearchBarDelegate, UITableViewDelegate, UITableViewDataSource {
+    
     @IBOutlet weak var back: UIBarButtonItem!
-    @IBOutlet weak var navBar: UINavigationItem!
-   
+    @IBOutlet weak var tableView: UITableView!
     var indicator = UIActivityIndicatorView()
     var QueryString: String = ""
-    @IBOutlet weak var tableView: UITableView!
     @IBOutlet weak var searchBar: UISearchBar!
+    @IBOutlet weak var navBar: UINavigationItem!
     var TableData:Array<DataModel> = Array<DataModel>()
     var page:Int = 1
     override func viewDidLoad() {
@@ -151,7 +151,6 @@ class SearchViewController: UIViewController, UISearchBarDelegate, UITableViewDe
             }
             do{
                 let jsonResult = try JSONSerialization.jsonObject(with: data!, options: JSONSerialization.ReadingOptions.mutableContainers) as! NSDictionary
-                if ((jsonResult["Posts"] as? String) != nil) {
                     let data = jsonResult["Posts"] as! NSArray
                     for item in data{
                         let tmm = item as! NSDictionary
@@ -163,7 +162,7 @@ class SearchViewController: UIViewController, UISearchBarDelegate, UITableViewDe
                         dataModel.Address = (tm["Address"] as! String?)!
                         dataModel.Specialisation = (tm["Specialisation"] as! String?)!
                         dataModel.Description = (tm["About"] as! String?)!
-                        dataModel.WorkDays = (tm["Dhr"] as! String?)!
+                        dataModel.WorkDays = (tm["DHr"] as! String?)!
                         dataModel.Image = (tm["Image"] as! String?)!
                         for itms in (tm["Images"] as! NSArray?)!
                             
@@ -183,7 +182,6 @@ class SearchViewController: UIViewController, UISearchBarDelegate, UITableViewDe
                         self.indicator.hidesWhenStopped = true
                         self.tableView.reloadData()
                     })
-                }
                 
                
                 
