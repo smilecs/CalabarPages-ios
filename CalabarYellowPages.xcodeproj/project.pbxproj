@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		80FF33EB1F22D76A005ACAB7 /* ListCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 80FF33EA1F22D76A005ACAB7 /* ListCell.xib */; };
 		CB6C8E5A4ACCD36F1F43A3A6 /* Pods_CalabarYellowPages.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 96D8B296F30C20A0E6BA7669 /* Pods_CalabarYellowPages.framework */; };
 		F602D3BD1DE08CFC00AB0DD6 /* TableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = F602D3BC1DE08CFC00AB0DD6 /* TableViewCell.swift */; };
 		F602D3BF1DE08D5900AB0DD6 /* DataModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = F602D3BE1DE08D5900AB0DD6 /* DataModel.swift */; };
@@ -28,6 +29,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		80FF33EA1F22D76A005ACAB7 /* ListCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ListCell.xib; sourceTree = "<group>"; };
 		96D8B296F30C20A0E6BA7669 /* Pods_CalabarYellowPages.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_CalabarYellowPages.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		A12FDA0AA71DEA8226AE1C9B /* Pods-CalabarYellowPages.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CalabarYellowPages.debug.xcconfig"; path = "Pods/Target Support Files/Pods-CalabarYellowPages/Pods-CalabarYellowPages.debug.xcconfig"; sourceTree = "<group>"; };
 		A19091C9D045D5CB05C1F5E7 /* Pods-CalabarYellowPages.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CalabarYellowPages.release.xcconfig"; path = "Pods/Target Support Files/Pods-CalabarYellowPages/Pods-CalabarYellowPages.release.xcconfig"; sourceTree = "<group>"; };
@@ -142,6 +144,7 @@
 				F6DE6E561DF4DA74002D20D2 /* CalabarYellowPages-Bridging-Header.h */,
 				F6CBE7561DF9DD77003B5DAC /* Login.swift */,
 				F6CBE7581DF9DDED003B5DAC /* TabBar.swift */,
+				80FF33EA1F22D76A005ACAB7 /* ListCell.xib */,
 			);
 			path = CalabarYellowPages;
 			sourceTree = "<group>";
@@ -225,6 +228,7 @@
 				F6DE6E261DF4CC7A002D20D2 /* GoogleService-Info.plist in Resources */,
 				F677DB851DCF808800DD2A84 /* Assets.xcassets in Resources */,
 				F677DB831DCF808800DD2A84 /* Main.storyboard in Resources */,
+				80FF33EB1F22D76A005ACAB7 /* ListCell.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
