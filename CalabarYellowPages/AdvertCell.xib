@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="12121" systemVersion="16F73" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="12089"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="advert" rowHeight="233" id="VB1-ru-AR6" customClass="PlusViewCell" customModule="CalabarYellowPages" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="233"/>
+            <autoresizingMask key="autoresizingMask"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="VB1-ru-AR6" id="ZwO-rx-mB5">
+                <rect key="frame" x="0.0" y="0.0" width="375" height="232.5"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="vOU-Ol-JdM">
+                        <rect key="frame" x="8" y="8" width="359" height="216.5"/>
+                    </imageView>
+                </subviews>
+                <constraints>
+                    <constraint firstItem="vOU-Ol-JdM" firstAttribute="leading" secondItem="ZwO-rx-mB5" secondAttribute="leadingMargin" id="3ma-We-xIa"/>
+                    <constraint firstAttribute="trailingMargin" secondItem="vOU-Ol-JdM" secondAttribute="trailing" id="6lD-R7-vUf"/>
+                    <constraint firstItem="vOU-Ol-JdM" firstAttribute="top" secondItem="ZwO-rx-mB5" secondAttribute="topMargin" id="rzd-Ra-0H0"/>
+                    <constraint firstAttribute="bottomMargin" secondItem="vOU-Ol-JdM" secondAttribute="bottom" id="xXL-B8-kgJ"/>
+                </constraints>
+            </tableViewCellContentView>
+            <connections>
+                <outlet property="advert" destination="vOU-Ol-JdM" id="ZhL-SN-u9X"/>
+            </connections>
+            <point key="canvasLocation" x="41.5" y="160.5"/>
+        </tableViewCell>
+    </objects>
+</document>

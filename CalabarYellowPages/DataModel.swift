@@ -20,6 +20,7 @@ class DataModel{
     var Image, Specialisation:String
     var Description:String
     var IsPlus:String
+    var review:String
     static let Url:String = "http://calabarpages.com/"
     init(){
         self.Web = ""
@@ -34,6 +35,8 @@ class DataModel{
         self.Slug = ""
         self.Type = ""
         self.IsPlus = ""
+        self.review = "0"
+        
     }
 }
 

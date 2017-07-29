@@ -10,11 +10,11 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "CalabarYellowPages/SearchViewController.swift"
-            timestampString = "521714944.183681"
+            timestampString = "523034988.928388"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "154"
-            endingLineNumber = "154"
+            startingLineNumber = "146"
+            endingLineNumber = "146"
             landmarkName = "get_data(_:)"
             landmarkType = "7">
          </BreakpointContent>
@@ -26,205 +26,13 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "CalabarYellowPages/SearchViewController.swift"
-            timestampString = "521714946.799327"
+            timestampString = "523034988.928388"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "155"
-            endingLineNumber = "155"
+            startingLineNumber = "147"
+            endingLineNumber = "147"
             landmarkName = "get_data(_:)"
             landmarkType = "7">
-         </BreakpointContent>
-      </BreakpointProxy>
-      <BreakpointProxy
-         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
-         <BreakpointContent
-            shouldBeEnabled = "No"
-            ignoreCount = "0"
-            continueAfterRunningActions = "No"
-            filePath = "CalabarYellowPages/SearchViewController.swift"
-            timestampString = "521714947.916201"
-            startingColumnNumber = "9223372036854775807"
-            endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "160"
-            endingLineNumber = "160"
-            landmarkName = "get_data(_:)"
-            landmarkType = "7">
-            <Locations>
-               <Location
-                  shouldBeEnabled = "No"
-                  ignoreCount = "0"
-                  continueAfterRunningActions = "No"
-                  symbolName = "CalabarYellowPages.SearchViewController.(get_data (Swift.String) -&gt; ()).(closure #1)"
-                  moduleName = "CalabarYellowPages"
-                  usesParentBreakpointCondition = "Yes"
-                  urlString = "file:///Users/mmumene/ios/calabarpages-ios--master/CalabarYellowPages/SearchViewController.swift"
-                  timestampString = "521714947.921277"
-                  startingColumnNumber = "9223372036854775807"
-                  endingColumnNumber = "9223372036854775807"
-                  startingLineNumber = "160"
-                  endingLineNumber = "160"
-                  offsetFromSymbolStart = "3669">
-               </Location>
-               <Location
-                  shouldBeEnabled = "No"
-                  ignoreCount = "0"
-                  continueAfterRunningActions = "No"
-                  symbolName = "CalabarYellowPages.SearchViewController.(get_data (Swift.String) -&gt; ()).(closure #1)"
-                  moduleName = "CalabarYellowPages"
-                  usesParentBreakpointCondition = "Yes"
-                  urlString = "file:///Users/mmumene/ios/calabarpages-ios--master/CalabarYellowPages/SearchViewController.swift"
-                  timestampString = "521714947.924805"
-                  startingColumnNumber = "9223372036854775807"
-                  endingColumnNumber = "9223372036854775807"
-                  startingLineNumber = "160"
-                  endingLineNumber = "160"
-                  offsetFromSymbolStart = "12480">
-               </Location>
-            </Locations>
-         </BreakpointContent>
-      </BreakpointProxy>
-      <BreakpointProxy
-         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
-         <BreakpointContent
-            shouldBeEnabled = "No"
-            ignoreCount = "0"
-            continueAfterRunningActions = "No"
-            filePath = "CalabarYellowPages/SearchViewController.swift"
-            timestampString = "521714948.890297"
-            startingColumnNumber = "9223372036854775807"
-            endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "163"
-            endingLineNumber = "163"
-            landmarkName = "get_data(_:)"
-            landmarkType = "7">
-            <Locations>
-               <Location
-                  shouldBeEnabled = "No"
-                  ignoreCount = "0"
-                  continueAfterRunningActions = "No"
-                  symbolName = "CalabarYellowPages.SearchViewController.(get_data (Swift.String) -&gt; ()).(closure #1)"
-                  moduleName = "CalabarYellowPages"
-                  usesParentBreakpointCondition = "Yes"
-                  urlString = "file:///Users/mmumene/ios/calabarpages-ios--master/CalabarYellowPages/SearchViewController.swift"
-                  timestampString = "521714948.902604"
-                  startingColumnNumber = "9223372036854775807"
-                  endingColumnNumber = "9223372036854775807"
-                  startingLineNumber = "163"
-                  endingLineNumber = "163"
-                  offsetFromSymbolStart = "6351">
-               </Location>
-               <Location
-                  shouldBeEnabled = "No"
-                  ignoreCount = "0"
-                  continueAfterRunningActions = "No"
-                  symbolName = "CalabarYellowPages.SearchViewController.(get_data (Swift.String) -&gt; ()).(closure #1)"
-                  moduleName = "CalabarYellowPages"
-                  usesParentBreakpointCondition = "Yes"
-                  urlString = "file:///Users/mmumene/ios/calabarpages-ios--master/CalabarYellowPages/SearchViewController.swift"
-                  timestampString = "521714948.905794"
-                  startingColumnNumber = "9223372036854775807"
-                  endingColumnNumber = "9223372036854775807"
-                  startingLineNumber = "163"
-                  endingLineNumber = "163"
-                  offsetFromSymbolStart = "12621">
-               </Location>
-            </Locations>
-         </BreakpointContent>
-      </BreakpointProxy>
-      <BreakpointProxy
-         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
-         <BreakpointContent
-            shouldBeEnabled = "No"
-            ignoreCount = "0"
-            continueAfterRunningActions = "No"
-            filePath = "CalabarYellowPages/SearchViewController.swift"
-            timestampString = "521714950.118532"
-            startingColumnNumber = "9223372036854775807"
-            endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "166"
-            endingLineNumber = "166"
-            landmarkName = "get_data(_:)"
-            landmarkType = "7">
-            <Locations>
-               <Location
-                  shouldBeEnabled = "No"
-                  ignoreCount = "0"
-                  continueAfterRunningActions = "No"
-                  symbolName = "CalabarYellowPages.SearchViewController.(get_data (Swift.String) -&gt; ()).(closure #1)"
-                  moduleName = "CalabarYellowPages"
-                  usesParentBreakpointCondition = "Yes"
-                  urlString = "file:///Users/mmumene/ios/calabarpages-ios--master/CalabarYellowPages/SearchViewController.swift"
-                  timestampString = "521714950.128864"
-                  startingColumnNumber = "9223372036854775807"
-                  endingColumnNumber = "9223372036854775807"
-                  startingLineNumber = "166"
-                  endingLineNumber = "166"
-                  offsetFromSymbolStart = "9036">
-               </Location>
-               <Location
-                  shouldBeEnabled = "No"
-                  ignoreCount = "0"
-                  continueAfterRunningActions = "No"
-                  symbolName = "CalabarYellowPages.SearchViewController.(get_data (Swift.String) -&gt; ()).(closure #1)"
-                  moduleName = "CalabarYellowPages"
-                  usesParentBreakpointCondition = "Yes"
-                  urlString = "file:///Users/mmumene/ios/calabarpages-ios--master/CalabarYellowPages/SearchViewController.swift"
-                  timestampString = "521714950.131265"
-                  startingColumnNumber = "9223372036854775807"
-                  endingColumnNumber = "9223372036854775807"
-                  startingLineNumber = "166"
-                  endingLineNumber = "166"
-                  offsetFromSymbolStart = "12762">
-               </Location>
-            </Locations>
-         </BreakpointContent>
-      </BreakpointProxy>
-      <BreakpointProxy
-         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
-         <BreakpointContent
-            shouldBeEnabled = "No"
-            ignoreCount = "0"
-            continueAfterRunningActions = "No"
-            filePath = "CalabarYellowPages/SearchViewController.swift"
-            timestampString = "521714951.278422"
-            startingColumnNumber = "9223372036854775807"
-            endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "162"
-            endingLineNumber = "162"
-            landmarkName = "get_data(_:)"
-            landmarkType = "7">
-            <Locations>
-               <Location
-                  shouldBeEnabled = "No"
-                  ignoreCount = "0"
-                  continueAfterRunningActions = "No"
-                  symbolName = "CalabarYellowPages.SearchViewController.(get_data (Swift.String) -&gt; ()).(closure #1)"
-                  moduleName = "CalabarYellowPages"
-                  usesParentBreakpointCondition = "Yes"
-                  urlString = "file:///Users/mmumene/ios/calabarpages-ios--master/CalabarYellowPages/SearchViewController.swift"
-                  timestampString = "521714951.283273"
-                  startingColumnNumber = "9223372036854775807"
-                  endingColumnNumber = "9223372036854775807"
-                  startingLineNumber = "162"
-                  endingLineNumber = "162"
-                  offsetFromSymbolStart = "5459">
-               </Location>
-               <Location
-                  shouldBeEnabled = "No"
-                  ignoreCount = "0"
-                  continueAfterRunningActions = "No"
-                  symbolName = "CalabarYellowPages.SearchViewController.(get_data (Swift.String) -&gt; ()).(closure #1)"
-                  moduleName = "CalabarYellowPages"
-                  usesParentBreakpointCondition = "Yes"
-                  urlString = "file:///Users/mmumene/ios/calabarpages-ios--master/CalabarYellowPages/SearchViewController.swift"
-                  timestampString = "521714951.286153"
-                  startingColumnNumber = "9223372036854775807"
-                  endingColumnNumber = "9223372036854775807"
-                  startingLineNumber = "162"
-                  endingLineNumber = "162"
-                  offsetFromSymbolStart = "12574">
-               </Location>
-            </Locations>
          </BreakpointContent>
       </BreakpointProxy>
    </Breakpoints>

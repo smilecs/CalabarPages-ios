@@ -17,6 +17,8 @@ class PlusTableViewController: UIViewController, UITableViewDelegate, UITableVie
     var page:Int = 1
     override func viewDidLoad() {
         super.viewDidLoad()
+        let nib = UINib(nibName: "ListCell", bundle: nil)
+        table.register(nib, forCellReuseIdentifier: "cell")
         self.table.delegate = self
         self.table.dataSource = self
         self.searchbar.delegate = self
@@ -89,14 +91,15 @@ class PlusTableViewController: UIViewController, UITableViewDelegate, UITableVie
     
      func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell = tableView.dequeueReusableCell(withIdentifier: "cell", for: indexPath) as! PlusViewCell
-            let item = TableData[indexPath.row]
-            cell.title?.text = item.Title
-            cell.Address?.text = item.Address
-            cell.special?.text = item.Specialisation
-            cell.workDays?.text = item.WorkDays
-            cell.Phone?.text = item.Phone
-            if let url = URL(string: item.Image), let datas = try? Data(contentsOf: url){
-                cell.plusLogo.image = UIImage(data: datas)
+        let item = TableData[indexPath.row]
+        cell.title?.text = item.Title
+        cell.Address?.text = item.Address
+        cell.special?.text = item.Specialisation
+        cell.workDays?.text = item.WorkDays
+        cell.Phone?.text = item.Phone
+        cell.review?.text = item.review
+        if let url = URL(string: item.Image), let datas = try? Data(contentsOf: url){
+            cell.imageView?.image = UIImage(data: datas)
             
         }
         return cell

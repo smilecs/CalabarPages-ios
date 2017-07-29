@@ -25,6 +25,8 @@ class SearchViewController: UIViewController, UISearchBarDelegate, UITableViewDe
         self.navBar.backBarButtonItem = back
         self.navBar.leftBarButtonItem = back
         self.navBar.leftItemsSupplementBackButton = true
+        let nib = UINib(nibName: "ListCell", bundle: nil)
+        tableView.register(nib, forCellReuseIdentifier: "cell")
         self.searchBar.delegate = self
         self.tableView.dataSource = self
         self.tableView.delegate = self
@@ -90,29 +92,19 @@ class SearchViewController: UIViewController, UISearchBarDelegate, UITableViewDe
     
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        if(TableData[indexPath.row].Type == "true"){
-            let cell = tableView.dequeueReusableCell(withIdentifier: "cell", for: indexPath) as! TableViewCell
+            let cell = tableView.dequeueReusableCell(withIdentifier: "cell", for: indexPath) as! PlusViewCell
             let item = TableData[indexPath.row]
-            cell.SearchTitle?.text = item.Title
-            cell.SearchAddress?.text = item.Address
-            cell.SearchSpecialisation?.text = item.Specialisation
-            cell.SearchWorkDay?.text = item.WorkDays
-            cell.SearchPhone?.text = item.Phone
+            cell.title?.text = item.Title
+            cell.Address?.text = item.Address
+            cell.special?.text = item.Specialisation
+            cell.workDays?.text = item.WorkDays
+            cell.Phone?.text = item.Phone
+            cell.review?.text = item.review
             if let url = URL(string: item.Image), let datas = try? Data(contentsOf: url){
-                cell.SearchLogo.image = UIImage(data: datas)
+                cell.imageView?.image = UIImage(data: datas)
                 
             }
             return cell
-        }else{
-            let cell = tableView.dequeueReusableCell(withIdentifier: "cell2", for: indexPath) as! TableViewCell
-            let item = TableData[indexPath.row]
-            cell.SearchTitle?.text = item.Title
-            cell.SearchAddress?.text = item.Address
-            cell.SearchSpecialisation?.text = item.Specialisation
-            cell.SearchWorkDay?.text = item.WorkDays
-            cell.SearchPhone?.text = item.Phone
-            return cell
-        }
         
     }
     
@@ -156,23 +148,18 @@ class SearchViewController: UIViewController, UISearchBarDelegate, UITableViewDe
                         let tmm = item as! NSDictionary
                         let tm = tmm["Listing"] as! NSDictionary
                         let dataModel:DataModel = DataModel()
-                        dataModel.Title = (tm["CompanyName"] as! String?)!
-                        dataModel.Slug = (tm["Slug"]as! String?)!
-                        dataModel.Phone = (tm["Hotline"] as! String?)!
-                        dataModel.Address = (tm["Address"] as! String?)!
-                        dataModel.Specialisation = (tm["Specialisation"] as! String?)!
-                        dataModel.Description = (tm["About"] as! String?)!
-                        dataModel.WorkDays = (tm["DHr"] as! String?)!
-                        dataModel.Image = (tm["Image"] as! String?)!
-                        for itms in (tm["Images"] as! NSArray?)!
-                            
-                            
-                        {
-                            dataModel.ImageAray.append(itms as! String)
-                        }
-                        
+                        dataModel.Type = tmm["Type"] as! String
+                        dataModel.Title = tm["CompanyName"] as! String
+                        dataModel.Slug = tm["Slug"]as! String
+                        dataModel.Phone = tm["Hotline"] as! String
+                        dataModel.Address = tm["Address"] as! String
+                        dataModel.Specialisation = tm["Specialisation"] as! String
+                        dataModel.WorkDays = tm["DHr"] as! String
+                        dataModel.Image = tm["Image"] as! String
+                        dataModel.Web = tm["Website"] as! String
+                        dataModel.IsPlus = tm["Plus"] as! String
+                        dataModel.review = tm["Reviews"] as! String
                         self.TableData.append(dataModel)
-                        
                         
                         
                     }

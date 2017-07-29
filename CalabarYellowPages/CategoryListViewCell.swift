@@ -10,13 +10,13 @@ import UIKit
 
 class CategoryListViewCell: UITableViewCell {
 
+    @IBOutlet weak var advert: UIImageView!
    
     @IBOutlet weak var WorkDays: UILabel!
     @IBOutlet weak var Address: UILabel!
     @IBOutlet weak var Title: UILabel!
     @IBOutlet weak var Phone: UILabel!
     @IBOutlet weak var Specialisation: UILabel!
-    @IBOutlet weak var Advert: UIImageView!
     @IBOutlet weak var logo: UIImageView!
    
     override func awakeFromNib() {

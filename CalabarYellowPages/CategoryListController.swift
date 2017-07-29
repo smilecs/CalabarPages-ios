@@ -21,6 +21,10 @@ class CategoryListController: UIViewController, UITableViewDelegate, UITableView
         self.Tableview.delegate = self
         self.Tableview.dataSource = self
         self.searchBar.delegate = self
+        let nib = UINib(nibName: "ListCell", bundle: nil)
+        let advertNib = UINib(nibName: "AdvertCell", bundle: nil)
+        Tableview.register(nib, forCellReuseIdentifier: "cell")
+        Tableview.register(advertNib, forCellReuseIdentifier: "advert")
         indicator = UIActivityIndicatorView(frame: CGRect(x: 0, y: 0, width: 40, height: 40))
         indicator.activityIndicatorViewStyle = UIActivityIndicatorViewStyle.gray
         indicator.center = self.view.center
@@ -81,22 +85,30 @@ class CategoryListController: UIViewController, UITableViewDelegate, UITableView
     
      func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let data = TableData[indexPath.row]
-        var cell:CategoryListViewCell
+        var cell:PlusViewCell
         switch data.Type{
             case "listing":
-                cell = tableView.dequeueReusableCell(withIdentifier: "cell", for: indexPath) as! CategoryListViewCell
+                cell = tableView.dequeueReusableCell(withIdentifier: "cell", for: indexPath) as! PlusViewCell
                 if(data.IsPlus == "true"){
-                    cell = tableView.dequeueReusableCell(withIdentifier: "plus", for: indexPath) as! CategoryListViewCell
                     if let url = URL(string: data.Image), let datas = try? Data(contentsOf: url){
-                        cell.logo?.image = UIImage(data: datas)
+                        cell.plusLogo?.image = UIImage(data: datas)
                         
+                    }else{
+                       let frame = CGRect(x: 0, y: 0, width: 0, height: 0)
+                        cell.plusLogo.frame = frame
+                        cell.plusLogo?.isHidden = true
+                        cell.headerStack.removeArrangedSubview(cell.imageStackView)
                     }
                 }
-                cell.Title?.text = data.Title
+                cell.title?.text = data.Title
                 cell.Address?.text = data.Address
-                cell.WorkDays?.text = data.WorkDays
+                cell.workDays?.text = data.WorkDays
                 cell.Phone?.text = data.Phone
-                cell.Specialisation?.text = data.Specialisation
+                cell.special?.text = data.Specialisation
+                if data.review.isEmpty{
+                    data.review = "0"
+                }
+                cell.review?.text = data.review
                 for view in cell.subviews{
                     if let label = view as? UILabel{
                         if label.text!.isEmpty{
@@ -106,9 +118,9 @@ class CategoryListController: UIViewController, UITableViewDelegate, UITableView
                 }
             break
         default:
-            cell = tableView.dequeueReusableCell(withIdentifier: "advert", for: indexPath) as! CategoryListViewCell
+            cell = tableView.dequeueReusableCell(withIdentifier: "advert", for: indexPath) as! PlusViewCell
             if let url = URL(string: data.Image), let datas = try? Data(contentsOf: url){
-                cell.Advert?.image = UIImage(data: datas)
+                cell.advert?.image = UIImage(data: datas)
          
             }
             break
@@ -175,6 +187,7 @@ class CategoryListController: UIViewController, UITableViewDelegate, UITableView
                     dataModel.Image = tm["Image"] as! String
                     dataModel.Web = tm["Website"] as! String
                     dataModel.IsPlus = tm["Plus"] as! String
+                    dataModel.review = tm["Reviews"] as! String
                     self.TableData.append(dataModel)
                     
                 }
