@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <Scheme
-   LastUpgradeVersion = "0830"
+   LastUpgradeVersion = "0700"
    version = "1.3">
    <BuildAction
       parallelizeBuildables = "YES"
@@ -14,7 +14,7 @@
             buildForAnalyzing = "YES">
             <BuildableReference
                BuildableIdentifier = "primary"
-               BlueprintIdentifier = "0E7B44D4AC271E8DCE5AC4E6882FBEC1"
+               BlueprintIdentifier = "D97890D817BD3EF8F2A3C2F7134E1840"
                BuildableName = "Pods_CalabarYellowPages.framework"
                BlueprintName = "Pods-CalabarYellowPages"
                ReferencedContainer = "container:Pods.xcodeproj">
@@ -45,7 +45,7 @@
       <MacroExpansion>
          <BuildableReference
             BuildableIdentifier = "primary"
-            BlueprintIdentifier = "0E7B44D4AC271E8DCE5AC4E6882FBEC1"
+            BlueprintIdentifier = "D97890D817BD3EF8F2A3C2F7134E1840"
             BuildableName = "Pods_CalabarYellowPages.framework"
             BlueprintName = "Pods-CalabarYellowPages"
             ReferencedContainer = "container:Pods.xcodeproj">
@@ -60,15 +60,6 @@
       savedToolIdentifier = ""
       useCustomWorkingDirectory = "NO"
       debugDocumentVersioning = "YES">
-      <MacroExpansion>
-         <BuildableReference
-            BuildableIdentifier = "primary"
-            BlueprintIdentifier = "0E7B44D4AC271E8DCE5AC4E6882FBEC1"
-            BuildableName = "Pods_CalabarYellowPages.framework"
-            BlueprintName = "Pods-CalabarYellowPages"
-            ReferencedContainer = "container:Pods.xcodeproj">
-         </BuildableReference>
-      </MacroExpansion>
    </ProfileAction>
    <AnalyzeAction
       buildConfiguration = "Debug">

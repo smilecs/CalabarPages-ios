@@ -11,18 +11,21 @@ PODS:
     - FBSDKCoreKit
   - FBSDKShareKit (4.18.0):
     - FBSDKCoreKit
+  - FloatRatingView (2.0)
 
 DEPENDENCIES:
   - FBSDKCoreKit
   - FBSDKLoginKit
   - FBSDKShareKit
+  - FloatRatingView (~> 2.0.0)
 
 SPEC CHECKSUMS:
   Bolts: 8a7995239dbe724f9cba2248b766d48b7ebdd322
   FBSDKCoreKit: 15fef8804a4629f98c6f4e55e81a76c9d725d85e
   FBSDKLoginKit: 6773073e970b2b15fb12e451ce7f11da0532b880
   FBSDKShareKit: 0b8d6cc3f103c75297eb3c62caec284a2ccf1b9e
+  FloatRatingView: 857ab8f10040d06a42fc979f486c8f9fecd2f2e5
 
-PODFILE CHECKSUM: 9858bb6a9c49723c9d086c10aef3f062af387ba8
+PODFILE CHECKSUM: 1f0fa52702d907ec3e5a8bcfd74f0a09db0aafad
 
-COCOAPODS: 1.1.1
+COCOAPODS: 1.2.1

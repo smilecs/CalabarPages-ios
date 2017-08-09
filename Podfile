@@ -9,6 +9,7 @@ target 'CalabarYellowPages' do
   pod 'FBSDKCoreKit'
   pod 'FBSDKLoginKit'
   pod 'FBSDKShareKit'
-  
+  pod 'FloatRatingView', '~> 2.0.0'
+
 
 end

@@ -11,6 +11,6 @@
 #endif
 
 
-FOUNDATION_EXPORT double Pods_CalabarYellowPagesVersionNumber;
-FOUNDATION_EXPORT const unsigned char Pods_CalabarYellowPagesVersionString[];
+FOUNDATION_EXPORT double FloatRatingViewVersionNumber;
+FOUNDATION_EXPORT const unsigned char FloatRatingViewVersionString[];
 

@@ -19,11 +19,12 @@ class PlusViewController: UIViewController {
     var phone = ""
     var logo = ""
     var web = ""
-   
+    @IBOutlet weak var titleBar: UINavigationItem!
     var ImageAray:[String] = []
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        titleBar.title = titleM
         /*if let url = URL(string: logo), let datas = try? Data(contentsOf: url){
             profileLogo.image = UIImage(data: datas)
         }*/
