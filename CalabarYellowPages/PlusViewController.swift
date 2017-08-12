@@ -9,6 +9,19 @@
 import UIKit
 
 class PlusViewController: UIViewController {
+    @IBOutlet weak var logoView: UIImageView!
+    @IBOutlet weak var titleLabel: UILabel!
+    @IBOutlet weak var descriptionLabel: UILabel!
+    @IBOutlet weak var addressLabel: UILabel!
+    @IBOutlet weak var workDaysLabel: UILabel!
+    @IBOutlet weak var specialLabel: UILabel!
+    @IBOutlet weak var phoneLabel: UILabel!
+    @IBOutlet weak var reviewButton: UIButton!
+    @IBOutlet weak var reviewLabel: UILabel!
+    @IBOutlet weak var galleryCollection: UICollectionView!
+    
+    
+    
     var TableData:Array<DataModel> = Array<DataModel>()
     var Description = ""
     var titleM = ""
