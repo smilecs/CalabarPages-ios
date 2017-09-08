@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		80C0A8E21F5D7FBF0013F265 /* CollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 80C0A8E01F5D7FBF0013F265 /* CollectionViewCell.swift */; };
+		80C0A8E31F5D7FBF0013F265 /* CollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 80C0A8E11F5D7FBF0013F265 /* CollectionViewCell.xib */; };
 		80C9E44F1F2A9A5E00BA65B1 /* AdvertCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 80C9E44E1F2A9A5E00BA65B1 /* AdvertCell.xib */; };
 		80FF33EB1F22D76A005ACAB7 /* ListCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 80FF33EA1F22D76A005ACAB7 /* ListCell.xib */; };
 		CB6C8E5A4ACCD36F1F43A3A6 /* Pods_CalabarYellowPages.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 96D8B296F30C20A0E6BA7669 /* Pods_CalabarYellowPages.framework */; };
@@ -22,7 +24,6 @@
 		F677DB881DCF808800DD2A84 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F677DB861DCF808800DD2A84 /* LaunchScreen.storyboard */; };
 		F6CBE7571DF9DD77003B5DAC /* Login.swift in Sources */ = {isa = PBXBuildFile; fileRef = F6CBE7561DF9DD77003B5DAC /* Login.swift */; };
 		F6CBE7591DF9DDED003B5DAC /* TabBar.swift in Sources */ = {isa = PBXBuildFile; fileRef = F6CBE7581DF9DDED003B5DAC /* TabBar.swift */; };
-		F6CBE7841DFAEC40003B5DAC /* CollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = F6CBE7831DFAEC40003B5DAC /* CollectionViewCell.swift */; };
 		F6D2658F1DE36A360032DC64 /* CategoryListViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = F6D2658E1DE36A360032DC64 /* CategoryListViewCell.swift */; };
 		F6D265911DE36BCC0032DC64 /* CategoryListController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F6D265901DE36BCC0032DC64 /* CategoryListController.swift */; };
 		F6DE6E261DF4CC7A002D20D2 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = F6DE6E251DF4CC7A002D20D2 /* GoogleService-Info.plist */; };
@@ -30,6 +31,8 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		80C0A8E01F5D7FBF0013F265 /* CollectionViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CollectionViewCell.swift; sourceTree = "<group>"; };
+		80C0A8E11F5D7FBF0013F265 /* CollectionViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = CollectionViewCell.xib; sourceTree = "<group>"; };
 		80C9E44E1F2A9A5E00BA65B1 /* AdvertCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = AdvertCell.xib; sourceTree = "<group>"; };
 		80FF33EA1F22D76A005ACAB7 /* ListCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ListCell.xib; sourceTree = "<group>"; };
 		96D8B296F30C20A0E6BA7669 /* Pods_CalabarYellowPages.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_CalabarYellowPages.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -59,7 +62,6 @@
 		F677DB891DCF808800DD2A84 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		F6CBE7561DF9DD77003B5DAC /* Login.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Login.swift; sourceTree = "<group>"; };
 		F6CBE7581DF9DDED003B5DAC /* TabBar.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TabBar.swift; sourceTree = "<group>"; };
-		F6CBE7831DFAEC40003B5DAC /* CollectionViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = CollectionViewCell.swift; path = ../CollectionViewCell.swift; sourceTree = "<group>"; };
 		F6D2658E1DE36A360032DC64 /* CategoryListViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CategoryListViewCell.swift; sourceTree = "<group>"; };
 		F6D265901DE36BCC0032DC64 /* CategoryListController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CategoryListController.swift; sourceTree = "<group>"; };
 		F6DE6E251DF4CC7A002D20D2 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
@@ -127,7 +129,6 @@
 			isa = PBXGroup;
 			children = (
 				F676022B1E1EF557001228B5 /* CalabarYellowPages.entitlements */,
-				F6CBE7831DFAEC40003B5DAC /* CollectionViewCell.swift */,
 				F6DE6E251DF4CC7A002D20D2 /* GoogleService-Info.plist */,
 				F677DB7B1DCF808800DD2A84 /* AppDelegate.swift */,
 				F677DB811DCF808800DD2A84 /* Main.storyboard */,
@@ -148,6 +149,8 @@
 				F6CBE7581DF9DDED003B5DAC /* TabBar.swift */,
 				80FF33EA1F22D76A005ACAB7 /* ListCell.xib */,
 				80C9E44E1F2A9A5E00BA65B1 /* AdvertCell.xib */,
+				80C0A8E01F5D7FBF0013F265 /* CollectionViewCell.swift */,
+				80C0A8E11F5D7FBF0013F265 /* CollectionViewCell.xib */,
 			);
 			path = CalabarYellowPages;
 			sourceTree = "<group>";
@@ -228,6 +231,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				F677DB881DCF808800DD2A84 /* LaunchScreen.storyboard in Resources */,
+				80C0A8E31F5D7FBF0013F265 /* CollectionViewCell.xib in Resources */,
 				80C9E44F1F2A9A5E00BA65B1 /* AdvertCell.xib in Resources */,
 				F6DE6E261DF4CC7A002D20D2 /* GoogleService-Info.plist in Resources */,
 				F677DB851DCF808800DD2A84 /* Assets.xcassets in Resources */,
@@ -299,7 +303,7 @@
 				F602D3BD1DE08CFC00AB0DD6 /* TableViewCell.swift in Sources */,
 				F602D3C51DE0C2AA00AB0DD6 /* PlusViewCell.swift in Sources */,
 				F6D265911DE36BCC0032DC64 /* CategoryListController.swift in Sources */,
-				F6CBE7841DFAEC40003B5DAC /* CollectionViewCell.swift in Sources */,
+				80C0A8E21F5D7FBF0013F265 /* CollectionViewCell.swift in Sources */,
 				F6CBE7591DF9DDED003B5DAC /* TabBar.swift in Sources */,
 				F602D3C31DE08EDA00AB0DD6 /* TableViewController.swift in Sources */,
 				F602D3BF1DE08D5900AB0DD6 /* DataModel.swift in Sources */,

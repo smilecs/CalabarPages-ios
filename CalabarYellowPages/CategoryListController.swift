@@ -12,7 +12,9 @@ class CategoryListController: UIViewController, UITableViewDelegate, UITableView
     @IBOutlet weak var Tableview: UITableView!
     @IBOutlet weak var searchBar: UISearchBar!
     var slug = ""
-    var categoryName = ""
+    var url = DataModel.Url+"api/pluslistings"
+    @IBOutlet weak var ti: UINavigationItem!
+    var categoryName = "Pluslistings"
     var page:Int = 1
     var indicator = UIActivityIndicatorView()
     var TableData:Array<DataModel> = Array<DataModel>()
@@ -21,6 +23,7 @@ class CategoryListController: UIViewController, UITableViewDelegate, UITableView
         self.Tableview.delegate = self
         self.Tableview.dataSource = self
         self.searchBar.delegate = self
+        ti.title = categoryName
         let nib = UINib(nibName: "ListCell", bundle: nil)
         let advertNib = UINib(nibName: "AdvertCell", bundle: nil)
         Tableview.register(nib, forCellReuseIdentifier: "cell")
@@ -32,7 +35,10 @@ class CategoryListController: UIViewController, UITableViewDelegate, UITableView
         indicator.startAnimating()
         indicator.backgroundColor = UIColor.white
         //api/newview?page=" + page + "&q=
-        get_data(DataModel.Url+"api/categories/"+slug+"?p=1")
+        if !slug.isEmpty {
+            url = DataModel.Url+"api/categories/"+slug
+        }
+        get_data(url)
         // Uncomment the following line to preserve selection between presentations
         // self.clearsSelectionOnViewWillAppear = false
 
@@ -89,7 +95,6 @@ class CategoryListController: UIViewController, UITableViewDelegate, UITableView
         switch data.Type{
             case "listing":
                 cell = tableView.dequeueReusableCell(withIdentifier: "cell", for: indexPath) as! PlusViewCell
-                if(data.IsPlus == "true"){
                     if let url = URL(string: data.Image), let datas = try? Data(contentsOf: url){
                         cell.plusLogo?.image = UIImage(data: datas)
                         
@@ -97,9 +102,7 @@ class CategoryListController: UIViewController, UITableViewDelegate, UITableView
                        let frame = CGRect(x: 0, y: 0, width: 0, height: 0)
                         cell.plusLogo.frame = frame
                         cell.plusLogo?.isHidden = true
-                        cell.headerStack.removeArrangedSubview(cell.imageStackView)
                     }
-                }
                 cell.title?.text = data.Title
                 cell.Address?.text = data.Address
                 cell.workDays?.text = data.WorkDays
@@ -113,6 +116,7 @@ class CategoryListController: UIViewController, UITableViewDelegate, UITableView
                     if let label = view as? UILabel{
                         if label.text!.isEmpty{
                             label.isHidden = true
+                            label.removeFromSuperview()
                         }
                     }
                 }
@@ -135,26 +139,40 @@ class CategoryListController: UIViewController, UITableViewDelegate, UITableView
         if indexPath.row == lastElement {
             page += 1
             let string = String(page)
-            get_data(DataModel.Url+"api/categories/"+slug+"?p="+string)
+            get_data(DataModel.Url+url+"?p="+string)
         }
     }
     
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
         let dataToPass = TableData[indexPath.row]
-        if dataToPass.Type == "listing"{
+        if dataToPass.IsPlus == "true"{
+            indicator.startAnimating()
+            indicator.color = UIColor.black
+            indicator.backgroundColor = UIColor.yellow
             let categoryList:PlusViewController = self.storyboard?.instantiateViewController(withIdentifier: "plusDetailView") as! PlusViewController
             categoryList.Address = dataToPass.Address
             categoryList.titleM = dataToPass.Title
-            categoryList.ImageAray = dataToPass.ImageAray
+            categoryList.imageGallery = dataToPass.ImageAray
             categoryList.Description = dataToPass.Description
             categoryList.phone = dataToPass.Phone
             categoryList.work = dataToPass.WorkDays
             categoryList.special = dataToPass.Specialisation
-            categoryList.web = dataToPass.Web
             categoryList.logo = dataToPass.Image
-            self.present(categoryList, animated: true, completion: nil)
+            categoryList.review = dataToPass.review
+            categoryList.websiteUrl = dataToPass.Web
+            categoryList.imageGallery = dataToPass.ImageAray
+            DispatchQueue.main.async(execute: {() -> Void in
+                self.present(categoryList, animated: true, completion: {()-> Void in
+                    self.hideIndicator()})
+            })
         }
         
+    }
+    
+    override func viewWillAppear(_ animated: Bool) {
+        if let index = self.Tableview.indexPathForSelectedRow{
+            self.Tableview.deselectRow(at: index, animated: true)
+        }
     }
     
     func get_data(_ url:String)
@@ -186,8 +204,10 @@ class CategoryListController: UIViewController, UITableViewDelegate, UITableView
                     dataModel.WorkDays = tm["DHr"] as! String
                     dataModel.Image = tm["Image"] as! String
                     dataModel.Web = tm["Website"] as! String
+                    dataModel.Description = tm["About"] as! String
                     dataModel.IsPlus = tm["Plus"] as! String
                     dataModel.review = tm["Reviews"] as! String
+                    dataModel.ImageAray = tm["Images"] as! [String]
                     self.TableData.append(dataModel)
                     
                 }
@@ -199,13 +219,17 @@ class CategoryListController: UIViewController, UITableViewDelegate, UITableView
                 
             }
             catch{
-                
+                self.hideIndicator()
             }
         })
         task.resume()
         
     }
     
+    func hideIndicator(){
+        self.indicator.stopAnimating()
+        self.indicator.hidesWhenStopped = true
+    }
 
    
 

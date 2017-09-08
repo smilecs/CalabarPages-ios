@@ -110,15 +110,17 @@ class PlusTableViewController: UIViewController, UITableViewDelegate, UITableVie
             let categoryList:PlusViewController = self.storyboard?.instantiateViewController(withIdentifier: "plusDetailView") as! PlusViewController
             categoryList.Address = dataToPass.Address
             categoryList.titleM = dataToPass.Title
-            categoryList.ImageAray = dataToPass.ImageAray
+            categoryList.imageGallery = dataToPass.ImageAray
             categoryList.Description = dataToPass.Description
             categoryList.phone = dataToPass.Phone
             categoryList.work = dataToPass.WorkDays
             categoryList.special = dataToPass.Specialisation
-            categoryList.web = dataToPass.Web
             categoryList.logo = dataToPass.Image
+            categoryList.review = dataToPass.review
+            categoryList.logo = dataToPass.Image
+            indicator.startAnimating()
             DispatchQueue.main.async(execute: {() -> Void in
-                self.present(categoryList, animated: true, completion: nil)
+                self.present(categoryList, animated: true, completion: self.exitScene)
             })
         
     }
@@ -176,8 +178,7 @@ class PlusTableViewController: UIViewController, UITableViewDelegate, UITableVie
                     
                 }
                 DispatchQueue.main.async(execute: {() -> Void in
-                    self.indicator.stopAnimating()
-                    self.indicator.hidesWhenStopped = true
+                    self.exitScene()
                     self.table.reloadData()
                 })
                 
@@ -188,6 +189,11 @@ class PlusTableViewController: UIViewController, UITableViewDelegate, UITableVie
         })
         task.resume()
         
+    }
+    
+    func exitScene(){
+        self.indicator.stopAnimating()
+        self.indicator.hidesWhenStopped = true
     }
 
 

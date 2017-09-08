@@ -19,6 +19,9 @@ class SearchViewController: UIViewController, UISearchBarDelegate, UITableViewDe
     @IBOutlet weak var navBar: UINavigationItem!
     var TableData:Array<DataModel> = Array<DataModel>()
     var page:Int = 1
+    @IBAction func backItem(_ sender: Any) {
+        self.navigationController?.popViewController(animated: true)
+    }
     override func viewDidLoad() {
         super.viewDidLoad()
         self.title = QueryString
@@ -110,17 +113,18 @@ class SearchViewController: UIViewController, UISearchBarDelegate, UITableViewDe
     
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
         let dataToPass = TableData[indexPath.row]
-        if(dataToPass.Type == "true"){
+        if dataToPass.IsPlus == "true"{
             let categoryList:PlusViewController = self.storyboard?.instantiateViewController(withIdentifier: "plusDetailView") as! PlusViewController
             categoryList.Address = dataToPass.Address
             categoryList.titleM = dataToPass.Title
-            categoryList.ImageAray = dataToPass.ImageAray
+            categoryList.imageGallery = dataToPass.ImageAray
             categoryList.Description = dataToPass.Description
             categoryList.phone = dataToPass.Phone
             categoryList.work = dataToPass.WorkDays
             categoryList.special = dataToPass.Specialisation
-            categoryList.web = dataToPass.Web
             categoryList.logo = dataToPass.Image
+            categoryList.review = dataToPass.review
+            categoryList.websiteUrl = dataToPass.Web
             DispatchQueue.main.async(execute: {() -> Void in
                 self.present(categoryList, animated: true, completion: nil)
             })

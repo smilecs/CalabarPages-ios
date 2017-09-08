@@ -25,22 +25,15 @@
                             <stackView opaque="NO" contentMode="scaleToFill" spacing="8" translatesAutoresizingMaskIntoConstraints="NO" id="qAR-9F-hjD" userLabel="header">
                                 <rect key="frame" x="0.0" y="0.0" width="509" height="86"/>
                                 <subviews>
-                                    <stackView opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="249" horizontalCompressionResistancePriority="749" verticalCompressionResistancePriority="749" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="Gek-aK-X3B">
-                                        <rect key="frame" x="0.0" y="0.0" width="120" height="86"/>
-                                        <subviews>
-                                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="tOZ-ZH-XbD">
-                                                <rect key="frame" x="0.0" y="0.0" width="120" height="86"/>
-                                                <constraints>
-                                                    <constraint firstAttribute="height" constant="86" id="nGk-tI-mxp"/>
-                                                </constraints>
-                                            </imageView>
-                                        </subviews>
+                                    <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="tOZ-ZH-XbD">
+                                        <rect key="frame" x="0.0" y="0.0" width="160" height="86"/>
                                         <constraints>
-                                            <constraint firstAttribute="width" constant="120" id="qtg-c9-dOk"/>
+                                            <constraint firstAttribute="width" constant="160" id="eoO-5o-L4p"/>
+                                            <constraint firstAttribute="height" constant="86" id="nGk-tI-mxp"/>
                                         </constraints>
-                                    </stackView>
+                                    </imageView>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" usesAttributedText="YES" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ENB-Ki-SzX">
-                                        <rect key="frame" x="128" y="0.0" width="381" height="86"/>
+                                        <rect key="frame" x="168" y="0.0" width="341" height="86"/>
                                         <attributedString key="attributedText">
                                             <fragment content="Title">
                                                 <attributes>
@@ -109,7 +102,6 @@
                         <constraints>
                             <constraint firstAttribute="trailing" secondItem="qAR-9F-hjD" secondAttribute="trailing" id="2bi-SB-gac"/>
                             <constraint firstItem="qAR-9F-hjD" firstAttribute="top" secondItem="Bhe-Xm-gdu" secondAttribute="top" id="3yd-Kd-uNo"/>
-                            <constraint firstItem="5xG-4I-wkO" firstAttribute="top" secondItem="Bhe-Xm-gdu" secondAttribute="top" constant="94" id="6a2-3J-Alw"/>
                             <constraint firstAttribute="trailing" secondItem="5xG-4I-wkO" secondAttribute="trailing" id="79o-Di-3Ew"/>
                             <constraint firstAttribute="bottom" secondItem="5xG-4I-wkO" secondAttribute="bottom" id="GaI-o6-idU"/>
                             <constraint firstItem="5xG-4I-wkO" firstAttribute="top" secondItem="qAR-9F-hjD" secondAttribute="bottom" constant="8" id="ezK-fU-l6h"/>
@@ -130,12 +122,10 @@
                 <outlet property="Address" destination="aom-W1-GM2" id="XdS-vw-GrL"/>
                 <outlet property="Phone" destination="Mz1-Ia-ur4" id="S1g-Yj-bOd"/>
                 <outlet property="headerStack" destination="qAR-9F-hjD" id="Ho4-is-Qht"/>
-                <outlet property="imageStackView" destination="Gek-aK-X3B" id="nWn-8A-g2J"/>
                 <outlet property="plusLogo" destination="tOZ-ZH-XbD" id="Aj6-vm-lgg"/>
                 <outlet property="review" destination="M6W-g5-dsM" id="ts5-ah-xdP"/>
                 <outlet property="special" destination="Siu-wB-Jwi" id="0dh-zL-m5s"/>
                 <outlet property="title" destination="ENB-Ki-SzX" id="Xgj-k4-v8x"/>
-                <outlet property="widthConstraint" destination="qtg-c9-dOk" id="LPL-ok-Zbk"/>
                 <outlet property="workDays" destination="eVj-W3-5wf" id="PPA-Iu-vol"/>
             </connections>
             <point key="canvasLocation" x="14.5" y="-50.5"/>

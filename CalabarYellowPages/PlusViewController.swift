@@ -8,7 +8,7 @@
 
 import UIKit
 
-class PlusViewController: UIViewController {
+class PlusViewController: UIViewController, UICollectionViewDelegate, UICollectionViewDataSource {
     @IBOutlet weak var logoView: UIImageView!
     @IBOutlet weak var titleLabel: UILabel!
     @IBOutlet weak var descriptionLabel: UILabel!
@@ -16,7 +16,15 @@ class PlusViewController: UIViewController {
     @IBOutlet weak var workDaysLabel: UILabel!
     @IBOutlet weak var specialLabel: UILabel!
     @IBOutlet weak var phoneLabel: UILabel!
-    @IBOutlet weak var reviewButton: UIButton!
+    @IBOutlet weak var website: UILabel!
+    
+    @IBAction func backButton(_ sender: Any) {
+        self.dismiss(animated: true, completion: nil)
+    }
+    @IBAction func call(_ sender: Any) {
+    }
+    @IBAction func reviewButton(_ sender: Any) {
+    }
     @IBOutlet weak var reviewLabel: UILabel!
     @IBOutlet weak var galleryCollection: UICollectionView!
     
@@ -26,29 +34,54 @@ class PlusViewController: UIViewController {
     var Description = ""
     var titleM = ""
     var Address = ""
-    var Website = ""
+    var websiteUrl = ""
     var special = ""
     var work = ""
     var phone = ""
     var logo = ""
-    var web = ""
+    var review = ""
     @IBOutlet weak var titleBar: UINavigationItem!
-    var ImageAray:[String] = []
+    var imageGallery:[String] = []
     
     override func viewDidLoad() {
         super.viewDidLoad()
         titleBar.title = titleM
-        /*if let url = URL(string: logo), let datas = try? Data(contentsOf: url){
-            profileLogo.image = UIImage(data: datas)
-        }*/
-        
-        // Do any additional setup after loading the view.
+        descriptionLabel.text = Description
+        addressLabel.text =  Address
+        workDaysLabel.text = work
+        specialLabel.text = special
+        phoneLabel.text = self.phone
+        reviewLabel.text = review
+        website.text = websiteUrl
+        self.galleryCollection.delegate = self
+        self.galleryCollection.dataSource = self
+        if let url = URL(string: logo), let datas = try? Data(contentsOf: url){
+            logoView.image = UIImage(data: datas)
+        }
+        let nib = UINib(nibName: "CollectionViewCell", bundle: nil)
+        galleryCollection.register(nib, forCellWithReuseIdentifier: "cCell")
     }
 
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
     }
+    
+    public func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell{
+        let collectionCell = collectionView.dequeueReusableCell(withReuseIdentifier: "cCell", for: indexPath) as! CollectionViewCell
+        if let url = URL(string: imageGallery[indexPath.row]), let content = try? Data(contentsOf: url){
+            collectionCell.galleryImage?.image = UIImage(data: content)
+        }
+        return collectionCell
+    }
+    
+    
+    public func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int{
+        let countOfSections = imageGallery.count
+        return countOfSections
+    }
+    
+
 
     
 
