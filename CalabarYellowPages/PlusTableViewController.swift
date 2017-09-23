@@ -10,7 +10,7 @@ import UIKit
 
 class PlusTableViewController: UIViewController, UITableViewDelegate, UITableViewDataSource, UISearchBarDelegate {
     var TableData:Array<DataModel> = Array<DataModel>()
-    
+    var dataToPass:DataModel!
     @IBOutlet weak var searchbar: UISearchBar!
     @IBOutlet weak var table: UITableView!
     var indicator = UIActivityIndicatorView()
@@ -106,7 +106,7 @@ class PlusTableViewController: UIViewController, UITableViewDelegate, UITableVie
     }
     
      func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
-        let dataToPass = TableData[indexPath.row]
+       dataToPass = TableData[indexPath.row]
             let categoryList:PlusViewController = self.storyboard?.instantiateViewController(withIdentifier: "plusDetailView") as! PlusViewController
             categoryList.Address = dataToPass.Address
             categoryList.titleM = dataToPass.Title
@@ -119,9 +119,10 @@ class PlusTableViewController: UIViewController, UITableViewDelegate, UITableVie
             categoryList.review = dataToPass.review
             categoryList.logo = dataToPass.Image
             indicator.startAnimating()
-            DispatchQueue.main.async(execute: {() -> Void in
+            self.performSegue(withIdentifier: "toDetailView", sender: dataToPass)
+            /*DispatchQueue.main.async(execute: {() -> Void in
                 self.present(categoryList, animated: true, completion: self.exitScene)
-            })
+            })*/
         
     }
 
@@ -129,15 +130,17 @@ class PlusTableViewController: UIViewController, UITableViewDelegate, UITableVie
     
 
   
-    /*
+    
     // MARK: - Navigation
 
     // In a storyboard-based application, you will often want to do a little preparation before navigation
-    override func prepareForSegue(segue: UIStoryboardSegue, sender: AnyObject?) {
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
         // Get the new view controller using segue.destinationViewController.
         // Pass the selected object to the new view controller.
+        let tabController = segue.destination as! PlusViewTabBarViewController
+        tabController.data = dataToPass
+        
     }
-    */
     
     func get_data(_ url:String)
     {
@@ -171,7 +174,7 @@ class PlusTableViewController: UIViewController, UITableViewDelegate, UITableVie
                     
                     
                     {
-                        dataModel.ImageAray.append(itms as! String)
+                        dataModel.ImageAray?.append(itms as! String)
                     }
                     self.TableData.append(dataModel)
                     

@@ -21,15 +21,11 @@ class PlusViewController: UIViewController, UICollectionViewDelegate, UICollecti
     @IBAction func backButton(_ sender: Any) {
         self.dismiss(animated: true, completion: nil)
     }
-    @IBAction func call(_ sender: Any) {
-    }
-    @IBAction func reviewButton(_ sender: Any) {
-    }
     @IBOutlet weak var reviewLabel: UILabel!
     @IBOutlet weak var galleryCollection: UICollectionView!
     
     
-    
+    var listingModel:DataModel
     var TableData:Array<DataModel> = Array<DataModel>()
     var Description = ""
     var titleM = ""
@@ -41,10 +37,12 @@ class PlusViewController: UIViewController, UICollectionViewDelegate, UICollecti
     var logo = ""
     var review = ""
     @IBOutlet weak var titleBar: UINavigationItem!
-    var imageGallery:[String] = []
+    var imageGallery:[String]? = nil
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        /*let parentController = self.tabBarController as? PlusViewTabBarViewController
+        listingModel = (parentController?.data)!*/
         titleBar.title = titleM
         descriptionLabel.text = Description
         addressLabel.text =  Address
@@ -69,7 +67,7 @@ class PlusViewController: UIViewController, UICollectionViewDelegate, UICollecti
     
     public func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell{
         let collectionCell = collectionView.dequeueReusableCell(withReuseIdentifier: "cCell", for: indexPath) as! CollectionViewCell
-        if let url = URL(string: imageGallery[indexPath.row]), let content = try? Data(contentsOf: url){
+        if let url = URL(string: (imageGallery?[indexPath.row])!), let content = try? Data(contentsOf: url){
             collectionCell.galleryImage?.image = UIImage(data: content)
         }
         return collectionCell
@@ -77,8 +75,11 @@ class PlusViewController: UIViewController, UICollectionViewDelegate, UICollecti
     
     
     public func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int{
-        let countOfSections = imageGallery.count
-        return countOfSections
+        if let countOfSections = imageGallery?.count{
+            return countOfSections
+        }else{
+            return 0
+        }
     }
     
 

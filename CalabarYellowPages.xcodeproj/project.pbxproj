@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		806AFC6C1F6FAB2D00A532A8 /* PlusViewTabBarViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 806AFC6B1F6FAB2D00A532A8 /* PlusViewTabBarViewController.swift */; };
 		80C0A8E21F5D7FBF0013F265 /* CollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 80C0A8E01F5D7FBF0013F265 /* CollectionViewCell.swift */; };
 		80C0A8E31F5D7FBF0013F265 /* CollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 80C0A8E11F5D7FBF0013F265 /* CollectionViewCell.xib */; };
 		80C9E44F1F2A9A5E00BA65B1 /* AdvertCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 80C9E44E1F2A9A5E00BA65B1 /* AdvertCell.xib */; };
@@ -31,6 +32,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		806AFC6B1F6FAB2D00A532A8 /* PlusViewTabBarViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PlusViewTabBarViewController.swift; sourceTree = "<group>"; };
 		80C0A8E01F5D7FBF0013F265 /* CollectionViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CollectionViewCell.swift; sourceTree = "<group>"; };
 		80C0A8E11F5D7FBF0013F265 /* CollectionViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = CollectionViewCell.xib; sourceTree = "<group>"; };
 		80C9E44E1F2A9A5E00BA65B1 /* AdvertCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = AdvertCell.xib; sourceTree = "<group>"; };
@@ -151,6 +153,7 @@
 				80C9E44E1F2A9A5E00BA65B1 /* AdvertCell.xib */,
 				80C0A8E01F5D7FBF0013F265 /* CollectionViewCell.swift */,
 				80C0A8E11F5D7FBF0013F265 /* CollectionViewCell.xib */,
+				806AFC6B1F6FAB2D00A532A8 /* PlusViewTabBarViewController.swift */,
 			);
 			path = CalabarYellowPages;
 			sourceTree = "<group>";
@@ -302,6 +305,7 @@
 				F602D3C71DE0C38E00AB0DD6 /* PlusTableViewController.swift in Sources */,
 				F602D3BD1DE08CFC00AB0DD6 /* TableViewCell.swift in Sources */,
 				F602D3C51DE0C2AA00AB0DD6 /* PlusViewCell.swift in Sources */,
+				806AFC6C1F6FAB2D00A532A8 /* PlusViewTabBarViewController.swift in Sources */,
 				F6D265911DE36BCC0032DC64 /* CategoryListController.swift in Sources */,
 				80C0A8E21F5D7FBF0013F265 /* CollectionViewCell.swift in Sources */,
 				F6CBE7591DF9DDED003B5DAC /* TabBar.swift in Sources */,

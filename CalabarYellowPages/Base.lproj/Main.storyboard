@@ -225,13 +225,14 @@
                         <outlet property="Tableview" destination="nWM-7g-Szs" id="TAG-va-fzG"/>
                         <outlet property="searchBar" destination="x6c-l4-NOJ" id="Xzv-bP-kLd"/>
                         <outlet property="ti" destination="4E0-jO-quT" id="eMF-os-gkI"/>
+                        <segue destination="NPD-8z-Esm" kind="show" identifier="toDetailView" id="T4d-gJ-CaG"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="agl-On-Wsd" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="498" y="858"/>
+            <point key="canvasLocation" x="463" y="1023"/>
         </scene>
-        <!--Plus View Controller-->
+        <!--Details-->
         <scene sceneID="WVW-PV-YqX">
             <objects>
                 <viewController storyboardIdentifier="plusDetailView" automaticallyAdjustsScrollViewInsets="NO" id="6W9-zd-SeS" customClass="PlusViewController" customModule="CalabarYellowPages" customModuleProvider="target" sceneMemberID="viewController">
@@ -260,10 +261,10 @@
                                 </items>
                             </navigationBar>
                             <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="rXY-A7-RR3">
-                                <rect key="frame" x="0.0" y="44" width="375" height="656"/>
+                                <rect key="frame" x="0.0" y="44" width="375" height="607"/>
                                 <subviews>
                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="12R-sZ-o9K">
-                                        <rect key="frame" x="0.0" y="0.0" width="375" height="656"/>
+                                        <rect key="frame" x="0.0" y="0.0" width="375" height="607"/>
                                         <subviews>
                                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="cDL-Ro-vsH">
                                                 <rect key="frame" x="67" y="8" width="240" height="164"/>
@@ -272,10 +273,10 @@
                                                 </constraints>
                                             </imageView>
                                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="16" translatesAutoresizingMaskIntoConstraints="NO" id="wRw-4b-ib8">
-                                                <rect key="frame" x="0.0" y="195" width="375" height="461"/>
+                                                <rect key="frame" x="0.0" y="195" width="375" height="412"/>
                                                 <subviews>
                                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" usesAttributedText="YES" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Onk-1O-ypa">
-                                                        <rect key="frame" x="0.0" y="0.0" width="375" height="27"/>
+                                                        <rect key="frame" x="0.0" y="0.0" width="375" height="0.0"/>
                                                         <attributedString key="attributedText">
                                                             <fragment content="Description">
                                                                 <attributes>
@@ -287,7 +288,7 @@
                                                         <nil key="highlightedColor"/>
                                                     </label>
                                                     <stackView opaque="NO" contentMode="scaleAspectFit" axis="vertical" distribution="fillProportionally" spacing="8" translatesAutoresizingMaskIntoConstraints="NO" id="ume-mP-dQJ">
-                                                        <rect key="frame" x="0.0" y="43" width="375" height="168"/>
+                                                        <rect key="frame" x="0.0" y="16" width="375" height="168"/>
                                                         <subviews>
                                                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillProportionally" spacing="16" translatesAutoresizingMaskIntoConstraints="NO" id="puV-rf-adz" userLabel="middleContent">
                                                                 <rect key="frame" x="0.0" y="0.0" width="375" height="140"/>
@@ -376,7 +377,7 @@
                                                         </subviews>
                                                     </stackView>
                                                     <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" dataMode="prototypes" translatesAutoresizingMaskIntoConstraints="NO" id="KN0-q9-LzI">
-                                                        <rect key="frame" x="0.0" y="227" width="375" height="234"/>
+                                                        <rect key="frame" x="0.0" y="200" width="375" height="212"/>
                                                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                                         <collectionViewFlowLayout key="collectionViewLayout" scrollDirection="horizontal" minimumLineSpacing="10" minimumInteritemSpacing="10" id="VmY-Om-7Te">
                                                             <size key="itemSize" width="240" height="128"/>
@@ -385,6 +386,10 @@
                                                             <inset key="sectionInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
                                                         </collectionViewFlowLayout>
                                                         <cells/>
+                                                        <connections>
+                                                            <outlet property="dataSource" destination="6W9-zd-SeS" id="VTF-2Q-DEW"/>
+                                                            <outlet property="delegate" destination="6W9-zd-SeS" id="Iev-Ce-YO6"/>
+                                                        </connections>
                                                     </collectionView>
                                                 </subviews>
                                             </stackView>
@@ -422,6 +427,7 @@
                             <constraint firstAttribute="trailing" secondItem="rXY-A7-RR3" secondAttribute="trailing" id="oKh-w7-Dla"/>
                         </constraints>
                     </view>
+                    <tabBarItem key="tabBarItem" title="Details" id="CCf-Yh-GVq"/>
                     <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
                     <size key="freeformSize" width="375" height="700"/>
                     <connections>
@@ -440,6 +446,43 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="8hZ-sd-auX" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="704.79999999999995" y="-148.42578710644679"/>
+        </scene>
+        <!--Reviews-->
+        <scene sceneID="9Z8-Jh-4nZ">
+            <objects>
+                <viewController id="UOa-Hc-TgY" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="Blm-3t-3hy"/>
+                        <viewControllerLayoutGuide type="bottom" id="TNP-g0-78l"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="bj0-eg-oEd">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                    <tabBarItem key="tabBarItem" title="Reviews" id="8KM-ro-VUs"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="9bA-Zz-3yj" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2345" y="232"/>
+        </scene>
+        <!--Plus View Tab Bar View Controller-->
+        <scene sceneID="ccN-3E-84M">
+            <objects>
+                <tabBarController id="NPD-8z-Esm" customClass="PlusViewTabBarViewController" customModule="CalabarYellowPages" customModuleProvider="target" sceneMemberID="viewController">
+                    <tabBar key="tabBar" contentMode="scaleToFill" id="0Rv-1H-Z91">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="49"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                    </tabBar>
+                    <connections>
+                        <segue destination="UOa-Hc-TgY" kind="relationship" relationship="viewControllers" id="IFs-jb-pAb"/>
+                        <segue destination="6W9-zd-SeS" kind="relationship" relationship="viewControllers" id="oql-wZ-gdP"/>
+                    </connections>
+                </tabBarController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="qYQ-Ws-ose" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1670" y="-401"/>
         </scene>
         <!--Search View Controller-->
         <scene sceneID="8l2-gD-UlP">

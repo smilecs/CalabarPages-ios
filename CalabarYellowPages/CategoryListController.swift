@@ -16,6 +16,7 @@ class CategoryListController: UIViewController, UITableViewDelegate, UITableView
     @IBOutlet weak var ti: UINavigationItem!
     var categoryName = "Pluslistings"
     var page:Int = 1
+    var dataToPass:DataModel!
     var indicator = UIActivityIndicatorView()
     var TableData:Array<DataModel> = Array<DataModel>()
     override func viewDidLoad() {
@@ -144,7 +145,7 @@ class CategoryListController: UIViewController, UITableViewDelegate, UITableView
     }
     
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
-        let dataToPass = TableData[indexPath.row]
+        dataToPass = TableData[indexPath.row]
         if dataToPass.IsPlus == "true"{
             indicator.startAnimating()
             indicator.color = UIColor.black
@@ -152,7 +153,6 @@ class CategoryListController: UIViewController, UITableViewDelegate, UITableView
             let categoryList:PlusViewController = self.storyboard?.instantiateViewController(withIdentifier: "plusDetailView") as! PlusViewController
             categoryList.Address = dataToPass.Address
             categoryList.titleM = dataToPass.Title
-            categoryList.imageGallery = dataToPass.ImageAray
             categoryList.Description = dataToPass.Description
             categoryList.phone = dataToPass.Phone
             categoryList.work = dataToPass.WorkDays
@@ -160,11 +160,14 @@ class CategoryListController: UIViewController, UITableViewDelegate, UITableView
             categoryList.logo = dataToPass.Image
             categoryList.review = dataToPass.review
             categoryList.websiteUrl = dataToPass.Web
-            categoryList.imageGallery = dataToPass.ImageAray
-            DispatchQueue.main.async(execute: {() -> Void in
+            if dataToPass.ImageAray != nil{
+                categoryList.imageGallery = dataToPass.ImageAray
+            }
+            self.performSegue(withIdentifier: "toDetailView", sender: dataToPass)
+            /*DispatchQueue.main.async(execute: {() -> Void in
                 self.present(categoryList, animated: true, completion: {()-> Void in
                     self.hideIndicator()})
-            })
+            })*/
         }
         
     }
@@ -207,7 +210,7 @@ class CategoryListController: UIViewController, UITableViewDelegate, UITableView
                     dataModel.Description = tm["About"] as! String
                     dataModel.IsPlus = tm["Plus"] as! String
                     dataModel.review = tm["Reviews"] as! String
-                    dataModel.ImageAray = tm["Images"] as! [String]
+                    dataModel.ImageAray? = tm["Images"] as! [String]
                     self.TableData.append(dataModel)
                     
                 }
@@ -233,14 +236,16 @@ class CategoryListController: UIViewController, UITableViewDelegate, UITableView
 
    
 
-    /*
+    
     // MARK: - Navigation
 
     // In a storyboard-based application, you will often want to do a little preparation before navigation
-    override func prepareForSegue(segue: UIStoryboardSegue, sender: AnyObject?) {
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
         // Get the new view controller using segue.destinationViewController.
         // Pass the selected object to the new view controller.
+        let tabController = segue.destination as! PlusViewTabBarViewController
+        tabController.data = dataToPass
     }
-    */
+ 
 
 }
