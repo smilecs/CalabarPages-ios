@@ -173,6 +173,7 @@ class CategoryListController: UIViewController, UITableViewDelegate, UITableView
     }
     
     override func viewWillAppear(_ animated: Bool) {
+        hideIndicator()
         if let index = self.Tableview.indexPathForSelectedRow{
             self.Tableview.deselectRow(at: index, animated: true)
         }
@@ -193,7 +194,6 @@ class CategoryListController: UIViewController, UITableViewDelegate, UITableView
             do{
                 let jsonResult = try JSONSerialization.jsonObject(with: data!, options: JSONSerialization.ReadingOptions.mutableContainers) as! NSDictionary
                 let data = jsonResult["Posts"] as! NSArray
-                print(data)
                 for item in data{
                     let tmm = item as! NSDictionary
                     let tm = tmm["Listing"] as! NSDictionary
@@ -243,8 +243,9 @@ class CategoryListController: UIViewController, UITableViewDelegate, UITableView
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
         // Get the new view controller using segue.destinationViewController.
         // Pass the selected object to the new view controller.
-        let tabController = segue.destination as! PlusViewTabBarViewController
-        tabController.data = dataToPass
+        if let tabController = segue.destination as? PlusViewTabBarViewController{
+            tabController.data = dataToPass
+        }
     }
  
 

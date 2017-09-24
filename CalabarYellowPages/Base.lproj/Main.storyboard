@@ -1,11 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="12121" systemVersion="16G29" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="49e-Tb-3d3">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13196" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="49e-Tb-3d3">
     <device id="retina4_7" orientation="portrait">
         <adaptation id="fullscreen"/>
     </device>
     <dependencies>
         <deployment identifier="iOS"/>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="12089"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13173"/>
         <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
@@ -103,7 +103,7 @@
                                 </items>
                             </navigationBar>
                             <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="65" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="C3l-no-TyK">
-                                <rect key="frame" x="0.0" y="88" width="375" height="530"/>
+                                <rect key="frame" x="0.0" y="100" width="375" height="518"/>
                                 <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <prototypes>
                                     <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="cell" rowHeight="65" id="9zj-UI-JDB" customClass="TableViewCell" customModule="CalabarYellowPages" customModuleProvider="target">
@@ -139,7 +139,7 @@
                                 </prototypes>
                             </tableView>
                             <searchBar contentMode="redraw" translatesAutoresizingMaskIntoConstraints="NO" id="vYL-cC-4c5">
-                                <rect key="frame" x="0.0" y="44" width="375" height="44"/>
+                                <rect key="frame" x="0.0" y="44" width="375" height="56"/>
                                 <textInputTraits key="textInputTraits"/>
                             </searchBar>
                         </subviews>
@@ -181,7 +181,7 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="251" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="nWM-7g-Szs">
-                                <rect key="frame" x="-4" y="88" width="383" height="530"/>
+                                <rect key="frame" x="-4" y="100" width="383" height="518"/>
                                 <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                             </tableView>
                             <navigationBar contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="GUC-zT-Arw">
@@ -202,7 +202,7 @@
                                 </items>
                             </navigationBar>
                             <searchBar contentMode="redraw" translatesAutoresizingMaskIntoConstraints="NO" id="x6c-l4-NOJ">
-                                <rect key="frame" x="-4" y="44" width="383" height="44"/>
+                                <rect key="frame" x="-4" y="44" width="383" height="56"/>
                                 <textInputTraits key="textInputTraits"/>
                             </searchBar>
                         </subviews>
@@ -272,7 +272,7 @@
                                                     <constraint firstAttribute="height" constant="164" id="LoC-dO-7Uu"/>
                                                 </constraints>
                                             </imageView>
-                                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="16" translatesAutoresizingMaskIntoConstraints="NO" id="wRw-4b-ib8">
+                                            <stackView opaque="NO" contentMode="scaleAspectFit" axis="vertical" spacing="16" translatesAutoresizingMaskIntoConstraints="NO" id="wRw-4b-ib8">
                                                 <rect key="frame" x="0.0" y="195" width="375" height="412"/>
                                                 <subviews>
                                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" usesAttributedText="YES" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Onk-1O-ypa">
@@ -280,7 +280,7 @@
                                                         <attributedString key="attributedText">
                                                             <fragment content="Description">
                                                                 <attributes>
-                                                                    <font key="NSFont" size="24" name="TimesNewRomanPSMT"/>
+                                                                    <font key="NSFont" size="24" name="Avenir-Light"/>
                                                                     <paragraphStyle key="NSParagraphStyle" alignment="center" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
                                                                 </attributes>
                                                             </fragment>
@@ -290,14 +290,14 @@
                                                     <stackView opaque="NO" contentMode="scaleAspectFit" axis="vertical" distribution="fillProportionally" spacing="8" translatesAutoresizingMaskIntoConstraints="NO" id="ume-mP-dQJ">
                                                         <rect key="frame" x="0.0" y="16" width="375" height="168"/>
                                                         <subviews>
-                                                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillProportionally" spacing="16" translatesAutoresizingMaskIntoConstraints="NO" id="puV-rf-adz" userLabel="middleContent">
+                                                            <stackView opaque="NO" contentMode="scaleAspectFit" axis="vertical" distribution="fillProportionally" spacing="16" translatesAutoresizingMaskIntoConstraints="NO" id="puV-rf-adz" userLabel="middleContent">
                                                                 <rect key="frame" x="0.0" y="0.0" width="375" height="140"/>
                                                                 <subviews>
                                                                     <stackView opaque="NO" contentMode="scaleAspectFit" axis="vertical" distribution="fillProportionally" alignment="center" spacing="16" translatesAutoresizingMaskIntoConstraints="NO" id="lYy-kA-9y8" userLabel="DetailStack">
                                                                         <rect key="frame" x="0.0" y="0.0" width="375" height="140"/>
                                                                         <subviews>
                                                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" usesAttributedText="YES" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="chu-HG-nAn">
-                                                                                <rect key="frame" x="158" y="0.0" width="59" height="15"/>
+                                                                                <rect key="frame" x="0.0" y="0.0" width="0.0" height="15"/>
                                                                                 <attributedString key="attributedText">
                                                                                     <fragment content="Address">
                                                                                         <attributes>
@@ -309,7 +309,7 @@
                                                                                 <nil key="highlightedColor"/>
                                                                             </label>
                                                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" usesAttributedText="YES" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="1ne-ut-txT">
-                                                                                <rect key="frame" x="147" y="31" width="81.5" height="15.5"/>
+                                                                                <rect key="frame" x="0.0" y="31" width="0.0" height="15.5"/>
                                                                                 <attributedString key="attributedText">
                                                                                     <fragment content="Work Days">
                                                                                         <attributes>
@@ -320,7 +320,7 @@
                                                                                 <nil key="highlightedColor"/>
                                                                             </label>
                                                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" usesAttributedText="YES" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="7LH-nR-5Ha">
-                                                                                <rect key="frame" x="136.5" y="62.5" width="102" height="15"/>
+                                                                                <rect key="frame" x="0.0" y="62.5" width="0.0" height="15"/>
                                                                                 <attributedString key="attributedText">
                                                                                     <fragment content="Specialisation">
                                                                                         <attributes>
@@ -331,7 +331,7 @@
                                                                                 <nil key="highlightedColor"/>
                                                                             </label>
                                                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" usesAttributedText="YES" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="uVJ-Da-zbR">
-                                                                                <rect key="frame" x="163.5" y="93.5" width="48.5" height="15.5"/>
+                                                                                <rect key="frame" x="0.0" y="93.5" width="0.0" height="15.5"/>
                                                                                 <attributedString key="attributedText">
                                                                                     <fragment content="Phone">
                                                                                         <attributes>
@@ -342,7 +342,7 @@
                                                                                 <nil key="highlightedColor"/>
                                                                             </label>
                                                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" usesAttributedText="YES" lineBreakMode="wordWrap" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="9sp-Xa-cDI">
-                                                                                <rect key="frame" x="2" y="125" width="371.5" height="15"/>
+                                                                                <rect key="frame" x="0.0" y="125" width="0.0" height="15"/>
                                                                                 <attributedString key="attributedText">
                                                                                     <fragment content="m,m,sm,dms,mds,md,smd,smd,sm,dms,dm,smd,smd,smd,smd,s">
                                                                                         <attributes>
@@ -450,7 +450,7 @@
         <!--Reviews-->
         <scene sceneID="9Z8-Jh-4nZ">
             <objects>
-                <viewController id="UOa-Hc-TgY" sceneMemberID="viewController">
+                <viewController id="UOa-Hc-TgY" customClass="ReviewViewController" customModule="CalabarYellowPages" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="Blm-3t-3hy"/>
                         <viewControllerLayoutGuide type="bottom" id="TNP-g0-78l"/>
@@ -458,13 +458,49 @@
                     <view key="view" contentMode="scaleToFill" id="bj0-eg-oEd">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <navigationBar contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="PAs-ZT-Gva">
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
+                                <color key="barTintColor" red="0.97406725380000003" green="1" blue="0.2917282538" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <items>
+                                    <navigationItem title="Reviews" id="Iqc-gh-zAX">
+                                        <barButtonItem key="leftBarButtonItem" title="back" id="CdO-du-sld">
+                                            <connections>
+                                                <action selector="back:" destination="UOa-Hc-TgY" id="DJX-KF-r2k"/>
+                                            </connections>
+                                        </barButtonItem>
+                                        <barButtonItem key="rightBarButtonItem" title="add review" id="mhB-Zo-PmM">
+                                            <connections>
+                                                <action selector="addReview:" destination="UOa-Hc-TgY" id="LXj-Xz-f5b"/>
+                                            </connections>
+                                        </barButtonItem>
+                                    </navigationItem>
+                                </items>
+                            </navigationBar>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="S7A-0z-ejC">
+                                <rect key="frame" x="0.0" y="44" width="375" height="574"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                            </tableView>
+                        </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="S7A-0z-ejC" firstAttribute="leading" secondItem="bj0-eg-oEd" secondAttribute="leading" id="17U-K2-ePa"/>
+                            <constraint firstItem="PAs-ZT-Gva" firstAttribute="leading" secondItem="bj0-eg-oEd" secondAttribute="leading" id="6nZ-dq-Xed"/>
+                            <constraint firstItem="PAs-ZT-Gva" firstAttribute="top" secondItem="bj0-eg-oEd" secondAttribute="top" id="BgV-L4-CaA"/>
+                            <constraint firstItem="TNP-g0-78l" firstAttribute="top" secondItem="S7A-0z-ejC" secondAttribute="bottom" id="KVN-mb-icf"/>
+                            <constraint firstItem="S7A-0z-ejC" firstAttribute="top" secondItem="PAs-ZT-Gva" secondAttribute="bottom" id="XIR-lH-jOg"/>
+                            <constraint firstAttribute="trailing" secondItem="S7A-0z-ejC" secondAttribute="trailing" id="da2-om-ZoR"/>
+                            <constraint firstItem="PAs-ZT-Gva" firstAttribute="width" secondItem="bj0-eg-oEd" secondAttribute="width" id="wPX-CF-kcd"/>
+                        </constraints>
                     </view>
                     <tabBarItem key="tabBarItem" title="Reviews" id="8KM-ro-VUs"/>
+                    <connections>
+                        <outlet property="reviewTable" destination="S7A-0z-ejC" id="L9C-aR-7XC"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="9bA-Zz-3yj" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2345" y="232"/>
+            <point key="canvasLocation" x="2344.8000000000002" y="231.63418290854574"/>
         </scene>
         <!--Plus View Tab Bar View Controller-->
         <scene sceneID="ccN-3E-84M">
@@ -476,8 +512,8 @@
                         <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
                     </tabBar>
                     <connections>
-                        <segue destination="UOa-Hc-TgY" kind="relationship" relationship="viewControllers" id="IFs-jb-pAb"/>
                         <segue destination="6W9-zd-SeS" kind="relationship" relationship="viewControllers" id="oql-wZ-gdP"/>
+                        <segue destination="UOa-Hc-TgY" kind="relationship" relationship="viewControllers" id="IFs-jb-pAb"/>
                     </connections>
                 </tabBarController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="qYQ-Ws-ose" userLabel="First Responder" sceneMemberID="firstResponder"/>
@@ -497,7 +533,7 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="251" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="XT1-TI-EFV">
-                                <rect key="frame" x="-4" y="88" width="383" height="579"/>
+                                <rect key="frame" x="-4" y="100" width="383" height="567"/>
                                 <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                             </tableView>
                             <navigationBar contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="qhL-18-6lF">
@@ -519,7 +555,7 @@
                                 </items>
                             </navigationBar>
                             <searchBar contentMode="redraw" translatesAutoresizingMaskIntoConstraints="NO" id="CBY-bg-PPc">
-                                <rect key="frame" x="-4" y="44" width="383" height="44"/>
+                                <rect key="frame" x="-4" y="44" width="383" height="56"/>
                                 <textInputTraits key="textInputTraits"/>
                             </searchBar>
                         </subviews>

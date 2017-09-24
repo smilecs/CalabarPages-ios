@@ -25,7 +25,7 @@ class PlusViewController: UIViewController, UICollectionViewDelegate, UICollecti
     @IBOutlet weak var galleryCollection: UICollectionView!
     
     
-    var listingModel:DataModel
+    lazy var listingModel = DataModel()
     var TableData:Array<DataModel> = Array<DataModel>()
     var Description = ""
     var titleM = ""
@@ -41,19 +41,23 @@ class PlusViewController: UIViewController, UICollectionViewDelegate, UICollecti
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        /*let parentController = self.tabBarController as? PlusViewTabBarViewController
-        listingModel = (parentController?.data)!*/
-        titleBar.title = titleM
-        descriptionLabel.text = Description
-        addressLabel.text =  Address
-        workDaysLabel.text = work
-        specialLabel.text = special
-        phoneLabel.text = self.phone
-        reviewLabel.text = review
-        website.text = websiteUrl
+        let parentController = self.tabBarController as? PlusViewTabBarViewController
+        listingModel = (parentController?.data)!
+        titleBar.title = listingModel.Title
+        descriptionLabel.text = listingModel.Description
+        addressLabel.text =  listingModel.Address
+        workDaysLabel.text = listingModel.WorkDays
+        specialLabel.text = listingModel.Specialisation
+        phoneLabel.text = listingModel.Phone
+        let reviewData = "\(listingModel.review) Reviews"
+        reviewLabel.text = reviewData
+        website.text = listingModel.Web
         self.galleryCollection.delegate = self
         self.galleryCollection.dataSource = self
-        if let url = URL(string: logo), let datas = try? Data(contentsOf: url){
+        logoView.layer.cornerRadius = logoView.frame.size.width/2
+        logoView.clipsToBounds = true
+        imageGallery = listingModel.ImageAray
+        if let url = URL(string: listingModel.Image), let datas = try? Data(contentsOf: url){
             logoView.image = UIImage(data: datas)
         }
         let nib = UINib(nibName: "CollectionViewCell", bundle: nil)

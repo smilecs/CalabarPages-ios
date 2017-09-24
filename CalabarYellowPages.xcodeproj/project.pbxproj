@@ -7,6 +7,10 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		8050D5B91F76AC2500C7799C /* ReviewViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8050D5B81F76AC2500C7799C /* ReviewViewController.swift */; };
+		8050D5BC1F76AC8300C7799C /* ReviewTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8050D5BA1F76AC8300C7799C /* ReviewTableViewCell.swift */; };
+		8050D5BD1F76AC8300C7799C /* ReviewTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 8050D5BB1F76AC8300C7799C /* ReviewTableViewCell.xib */; };
+		8050D5BF1F779CBE00C7799C /* ReviewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8050D5BE1F779CBE00C7799C /* ReviewModel.swift */; };
 		806AFC6C1F6FAB2D00A532A8 /* PlusViewTabBarViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 806AFC6B1F6FAB2D00A532A8 /* PlusViewTabBarViewController.swift */; };
 		80C0A8E21F5D7FBF0013F265 /* CollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 80C0A8E01F5D7FBF0013F265 /* CollectionViewCell.swift */; };
 		80C0A8E31F5D7FBF0013F265 /* CollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 80C0A8E11F5D7FBF0013F265 /* CollectionViewCell.xib */; };
@@ -32,6 +36,10 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		8050D5B81F76AC2500C7799C /* ReviewViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReviewViewController.swift; sourceTree = SOURCE_ROOT; };
+		8050D5BA1F76AC8300C7799C /* ReviewTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReviewTableViewCell.swift; sourceTree = "<group>"; };
+		8050D5BB1F76AC8300C7799C /* ReviewTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ReviewTableViewCell.xib; sourceTree = "<group>"; };
+		8050D5BE1F779CBE00C7799C /* ReviewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReviewModel.swift; sourceTree = "<group>"; };
 		806AFC6B1F6FAB2D00A532A8 /* PlusViewTabBarViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PlusViewTabBarViewController.swift; sourceTree = "<group>"; };
 		80C0A8E01F5D7FBF0013F265 /* CollectionViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CollectionViewCell.swift; sourceTree = "<group>"; };
 		80C0A8E11F5D7FBF0013F265 /* CollectionViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = CollectionViewCell.xib; sourceTree = "<group>"; };
@@ -149,11 +157,15 @@
 				F6DE6E561DF4DA74002D20D2 /* CalabarYellowPages-Bridging-Header.h */,
 				F6CBE7561DF9DD77003B5DAC /* Login.swift */,
 				F6CBE7581DF9DDED003B5DAC /* TabBar.swift */,
+				8050D5B81F76AC2500C7799C /* ReviewViewController.swift */,
 				80FF33EA1F22D76A005ACAB7 /* ListCell.xib */,
 				80C9E44E1F2A9A5E00BA65B1 /* AdvertCell.xib */,
 				80C0A8E01F5D7FBF0013F265 /* CollectionViewCell.swift */,
 				80C0A8E11F5D7FBF0013F265 /* CollectionViewCell.xib */,
 				806AFC6B1F6FAB2D00A532A8 /* PlusViewTabBarViewController.swift */,
+				8050D5BA1F76AC8300C7799C /* ReviewTableViewCell.swift */,
+				8050D5BB1F76AC8300C7799C /* ReviewTableViewCell.xib */,
+				8050D5BE1F779CBE00C7799C /* ReviewModel.swift */,
 			);
 			path = CalabarYellowPages;
 			sourceTree = "<group>";
@@ -188,7 +200,7 @@
 			isa = PBXProject;
 			attributes = {
 				LastSwiftUpdateCheck = 0720;
-				LastUpgradeCheck = 0820;
+				LastUpgradeCheck = 0900;
 				ORGANIZATIONNAME = calabarpages;
 				TargetAttributes = {
 					F677DB771DCF808800DD2A84 = {
@@ -238,6 +250,7 @@
 				80C9E44F1F2A9A5E00BA65B1 /* AdvertCell.xib in Resources */,
 				F6DE6E261DF4CC7A002D20D2 /* GoogleService-Info.plist in Resources */,
 				F677DB851DCF808800DD2A84 /* Assets.xcassets in Resources */,
+				8050D5BD1F76AC8300C7799C /* ReviewTableViewCell.xib in Resources */,
 				F677DB831DCF808800DD2A84 /* Main.storyboard in Resources */,
 				80FF33EB1F22D76A005ACAB7 /* ListCell.xib in Resources */,
 			);
@@ -303,10 +316,13 @@
 				F6CBE7571DF9DD77003B5DAC /* Login.swift in Sources */,
 				F677DB7C1DCF808800DD2A84 /* AppDelegate.swift in Sources */,
 				F602D3C71DE0C38E00AB0DD6 /* PlusTableViewController.swift in Sources */,
+				8050D5B91F76AC2500C7799C /* ReviewViewController.swift in Sources */,
 				F602D3BD1DE08CFC00AB0DD6 /* TableViewCell.swift in Sources */,
 				F602D3C51DE0C2AA00AB0DD6 /* PlusViewCell.swift in Sources */,
 				806AFC6C1F6FAB2D00A532A8 /* PlusViewTabBarViewController.swift in Sources */,
+				8050D5BC1F76AC8300C7799C /* ReviewTableViewCell.swift in Sources */,
 				F6D265911DE36BCC0032DC64 /* CategoryListController.swift in Sources */,
+				8050D5BF1F779CBE00C7799C /* ReviewModel.swift in Sources */,
 				80C0A8E21F5D7FBF0013F265 /* CollectionViewCell.swift in Sources */,
 				F6CBE7591DF9DDED003B5DAC /* TabBar.swift in Sources */,
 				F602D3C31DE08EDA00AB0DD6 /* TableViewController.swift in Sources */,
@@ -345,14 +361,20 @@
 				CLANG_CXX_LIBRARY = "libc++";
 				CLANG_ENABLE_MODULES = YES;
 				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
 				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
 				CLANG_WARN_CONSTANT_CONVERSION = YES;
 				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
 				CLANG_WARN_EMPTY_BODY = YES;
 				CLANG_WARN_ENUM_CONVERSION = YES;
 				CLANG_WARN_INFINITE_RECURSION = YES;
 				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
 				CLANG_WARN_SUSPICIOUS_MOVE = YES;
 				CLANG_WARN_UNREACHABLE_CODE = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
@@ -394,14 +416,20 @@
 				CLANG_CXX_LIBRARY = "libc++";
 				CLANG_ENABLE_MODULES = YES;
 				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
 				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
 				CLANG_WARN_CONSTANT_CONVERSION = YES;
 				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
 				CLANG_WARN_EMPTY_BODY = YES;
 				CLANG_WARN_ENUM_CONVERSION = YES;
 				CLANG_WARN_INFINITE_RECURSION = YES;
 				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
 				CLANG_WARN_SUSPICIOUS_MOVE = YES;
 				CLANG_WARN_UNREACHABLE_CODE = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;

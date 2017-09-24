@@ -21,6 +21,8 @@ class CategoryListViewCell: UITableViewCell {
    
     override func awakeFromNib() {
         super.awakeFromNib()
+        logo.layer.cornerRadius = logo.frame.size.width/2
+        logo.clipsToBounds = true
         // Initialization code
     }
 
