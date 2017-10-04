@@ -1,11 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="12121" systemVersion="16F73" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="11762" systemVersion="16C68" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
     <device id="ipad9_7" orientation="portrait">
         <adaptation id="splitview2_3"/>
     </device>
     <dependencies>
         <deployment identifier="iOS"/>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="12089"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11757"/>
         <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
@@ -23,17 +23,17 @@
                         <rect key="frame" x="8" y="8" width="509" height="282.5"/>
                         <subviews>
                             <stackView opaque="NO" contentMode="scaleToFill" spacing="8" translatesAutoresizingMaskIntoConstraints="NO" id="qAR-9F-hjD" userLabel="header">
-                                <rect key="frame" x="0.0" y="0.0" width="509" height="86"/>
+                                <rect key="frame" x="0.0" y="0.0" width="509" height="96"/>
                                 <subviews>
                                     <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="tOZ-ZH-XbD">
-                                        <rect key="frame" x="0.0" y="0.0" width="160" height="86"/>
+                                        <rect key="frame" x="0.0" y="0.0" width="96" height="96"/>
                                         <constraints>
-                                            <constraint firstAttribute="width" constant="160" id="eoO-5o-L4p"/>
-                                            <constraint firstAttribute="height" constant="86" id="nGk-tI-mxp"/>
+                                            <constraint firstAttribute="width" constant="96" id="eoO-5o-L4p"/>
+                                            <constraint firstAttribute="height" constant="96" id="nGk-tI-mxp"/>
                                         </constraints>
                                     </imageView>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" usesAttributedText="YES" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ENB-Ki-SzX">
-                                        <rect key="frame" x="168" y="0.0" width="341" height="86"/>
+                                        <rect key="frame" x="104" y="0.0" width="405" height="96"/>
                                         <attributedString key="attributedText">
                                             <fragment content="Title">
                                                 <attributes>
@@ -47,7 +47,7 @@
                                 </subviews>
                             </stackView>
                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="equalSpacing" spacing="8" translatesAutoresizingMaskIntoConstraints="NO" id="5xG-4I-wkO" userLabel="texts">
-                                <rect key="frame" x="0.0" y="94" width="509" height="188.5"/>
+                                <rect key="frame" x="0.0" y="104" width="509" height="178.5"/>
                                 <subviews>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Address" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="aom-W1-GM2">
                                         <rect key="frame" x="0.0" y="0.0" width="509" height="19"/>
@@ -56,25 +56,25 @@
                                         <nil key="highlightedColor"/>
                                     </label>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Work days" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="eVj-W3-5wf">
-                                        <rect key="frame" x="0.0" y="42" width="509" height="19"/>
+                                        <rect key="frame" x="0.0" y="39.5" width="509" height="19"/>
                                         <fontDescription key="fontDescription" name="Times-Roman" family="Times" pointSize="17"/>
                                         <nil key="textColor"/>
                                         <nil key="highlightedColor"/>
                                     </label>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Phone" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Mz1-Ia-ur4">
-                                        <rect key="frame" x="0.0" y="84" width="509" height="19"/>
+                                        <rect key="frame" x="0.0" y="79" width="509" height="19"/>
                                         <fontDescription key="fontDescription" name="Times-Roman" family="Times" pointSize="17"/>
                                         <nil key="textColor"/>
                                         <nil key="highlightedColor"/>
                                     </label>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Specalisation" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Siu-wB-Jwi">
-                                        <rect key="frame" x="0.0" y="126" width="509" height="19"/>
+                                        <rect key="frame" x="0.0" y="118.5" width="509" height="19"/>
                                         <fontDescription key="fontDescription" name="Times-BoldItalic" family="Times" pointSize="17"/>
                                         <nil key="textColor"/>
                                         <nil key="highlightedColor"/>
                                     </label>
                                     <stackView opaque="NO" contentMode="scaleToFill" spacing="8" translatesAutoresizingMaskIntoConstraints="NO" id="kfy-be-JFA">
-                                        <rect key="frame" x="0.0" y="168" width="509" height="20.5"/>
+                                        <rect key="frame" x="0.0" y="158" width="509" height="20.5"/>
                                         <subviews>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" verticalHuggingPriority="251" text="0" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="M6W-g5-dsM">
                                                 <rect key="frame" x="0.0" y="0.0" width="440.5" height="20.5"/>

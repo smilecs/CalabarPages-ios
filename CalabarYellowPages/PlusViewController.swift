@@ -49,9 +49,15 @@ class PlusViewController: UIViewController, UICollectionViewDelegate, UICollecti
         workDaysLabel.text = listingModel.WorkDays
         specialLabel.text = listingModel.Specialisation
         phoneLabel.text = listingModel.Phone
+        let phoneTap = UITapGestureRecognizer(target: self, action: #selector(PlusViewController.phoneTapFunction))
+        phoneLabel.isUserInteractionEnabled = true
+        phoneLabel.addGestureRecognizer(phoneTap)
         let reviewData = "\(listingModel.review) Reviews"
         reviewLabel.text = reviewData
         website.text = listingModel.Web
+        let tap = UITapGestureRecognizer(target: self, action: #selector(PlusViewController.tapFunction))
+        website.isUserInteractionEnabled = true
+        website.addGestureRecognizer(tap)
         self.galleryCollection.delegate = self
         self.galleryCollection.dataSource = self
         logoView.layer.cornerRadius = logoView.frame.size.width/2
@@ -86,6 +92,17 @@ class PlusViewController: UIViewController, UICollectionViewDelegate, UICollecti
         }
     }
     
+    func webTapFunction(sender:UITapGestureRecognizer) {
+        let url = NSURL(string: listingModel.Web)!
+        UIApplication.sharedApplication().openURL(url)
+    }
+    
+    func phoneTapFunction(sender:UITapGestureRecognizer){
+        if let url = NSURL(string: "tel://\(listingModel.Phone)"), UIApplication.sharedApplication().canOpenURL(url) {
+            UIApplication.sharedApplication().openURL(url)
+        }
+        
+    }
 
 
     
