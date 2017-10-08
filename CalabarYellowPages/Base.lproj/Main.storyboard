@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="11762" systemVersion="16C68" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="49e-Tb-3d3">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="11762" systemVersion="16G29" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="49e-Tb-3d3">
     <device id="retina4_7" orientation="portrait">
         <adaptation id="fullscreen"/>
     </device>
@@ -232,6 +232,85 @@
             </objects>
             <point key="canvasLocation" x="463" y="1023"/>
         </scene>
+        <!--Review Modal View Controller-->
+        <scene sceneID="QNs-md-xbm">
+            <objects>
+                <viewController id="Fuh-2s-SvM" customClass="ReviewModalViewController" customModule="CalabarYellowPages" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="rA0-VD-4s1"/>
+                        <viewControllerLayoutGuide type="bottom" id="hed-EW-YKa"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="IwR-gp-SQS">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="dFh-9w-3Bf">
+                                <rect key="frame" x="16" y="20" width="343" height="206"/>
+                                <subviews>
+                                    <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="Zs1-MS-IB9">
+                                        <rect key="frame" x="0.0" y="0.0" width="343" height="176"/>
+                                        <subviews>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Tell others what you think" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="d4o-3g-UQS">
+                                                <rect key="frame" x="24.5" y="0.0" width="294.5" height="21"/>
+                                                <fontDescription key="fontDescription" type="system" pointSize="26"/>
+                                                <nil key="textColor"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleAspectFit" textAlignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="Dmm-46-R8n">
+                                                <rect key="frame" x="0.0" y="21" width="343" height="86"/>
+                                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                                            </textView>
+                                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Iot-S9-xmZ" customClass="FloatRatingView">
+                                                <rect key="frame" x="0.0" y="107" width="343" height="69"/>
+                                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="height" constant="69" id="OkQ-FA-PDf"/>
+                                                </constraints>
+                                            </view>
+                                        </subviews>
+                                    </stackView>
+                                    <stackView opaque="NO" contentMode="scaleAspectFill" distribution="fillEqually" spacing="16" translatesAutoresizingMaskIntoConstraints="NO" id="okO-Rg-6qA">
+                                        <rect key="frame" x="0.0" y="176" width="343" height="30"/>
+                                        <subviews>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="iv8-FJ-z5K" userLabel="cancel">
+                                                <rect key="frame" x="0.0" y="0.0" width="163.5" height="30"/>
+                                                <state key="normal" title="Cancel"/>
+                                                <connections>
+                                                    <action selector="cancel:" destination="Fuh-2s-SvM" eventType="touchUpInside" id="Vrw-vz-1vU"/>
+                                                </connections>
+                                            </button>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="t1X-nj-Zdg" userLabel="review">
+                                                <rect key="frame" x="179.5" y="0.0" width="163.5" height="30"/>
+                                                <state key="normal" title="Review"/>
+                                                <connections>
+                                                    <action selector="review:" destination="Fuh-2s-SvM" eventType="touchUpInside" id="6YX-nl-b5F"/>
+                                                </connections>
+                                            </button>
+                                        </subviews>
+                                    </stackView>
+                                </subviews>
+                            </stackView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="dFh-9w-3Bf" firstAttribute="trailing" secondItem="IwR-gp-SQS" secondAttribute="trailingMargin" id="5uv-qW-u1X"/>
+                            <constraint firstItem="dFh-9w-3Bf" firstAttribute="top" secondItem="rA0-VD-4s1" secondAttribute="bottom" id="8sd-Wk-1oB"/>
+                            <constraint firstItem="hed-EW-YKa" firstAttribute="top" secondItem="dFh-9w-3Bf" secondAttribute="bottom" constant="441" id="KQ8-He-dBa"/>
+                            <constraint firstItem="dFh-9w-3Bf" firstAttribute="leading" secondItem="IwR-gp-SQS" secondAttribute="leadingMargin" id="ztv-T5-zQB"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="rating" destination="Iot-S9-xmZ" id="7jn-B4-GVC"/>
+                        <outlet property="review" destination="t1X-nj-Zdg" id="SFI-Iy-oyK"/>
+                        <outlet property="reviewText" destination="Dmm-46-R8n" id="Nfq-7S-1CC"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="v3O-eA-8ja" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="3254" y="252"/>
+        </scene>
         <!--Details-->
         <scene sceneID="WVW-PV-YqX">
             <objects>
@@ -245,9 +324,9 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <navigationBar contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="6Lr-La-Xsd">
-                                <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="40"/>
                                 <constraints>
-                                    <constraint firstAttribute="height" constant="44" id="e2K-IO-s0W"/>
+                                    <constraint firstAttribute="height" constant="40" id="e2K-IO-s0W"/>
                                 </constraints>
                                 <color key="barTintColor" red="0.97406725384540527" green="1" blue="0.29172825379801737" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <items>
@@ -257,14 +336,19 @@
                                                 <action selector="backButton:" destination="6W9-zd-SeS" id="gSd-6K-DBW"/>
                                             </connections>
                                         </barButtonItem>
+                                        <barButtonItem key="rightBarButtonItem" title="call" id="7wp-Ld-caX">
+                                            <connections>
+                                                <action selector="callMenuButton:" destination="6W9-zd-SeS" id="DRP-8Y-DRC"/>
+                                            </connections>
+                                        </barButtonItem>
                                     </navigationItem>
                                 </items>
                             </navigationBar>
                             <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="rXY-A7-RR3">
-                                <rect key="frame" x="0.0" y="44" width="375" height="607"/>
+                                <rect key="frame" x="0.0" y="40" width="375" height="611"/>
                                 <subviews>
                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="12R-sZ-o9K">
-                                        <rect key="frame" x="0.0" y="0.0" width="375" height="607"/>
+                                        <rect key="frame" x="0.0" y="0.0" width="375" height="611"/>
                                         <subviews>
                                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="cDL-Ro-vsH">
                                                 <rect key="frame" x="67" y="8" width="240" height="164"/>
@@ -273,7 +357,7 @@
                                                 </constraints>
                                             </imageView>
                                             <stackView opaque="NO" contentMode="scaleAspectFit" axis="vertical" spacing="16" translatesAutoresizingMaskIntoConstraints="NO" id="wRw-4b-ib8">
-                                                <rect key="frame" x="0.0" y="195" width="375" height="412"/>
+                                                <rect key="frame" x="0.0" y="195" width="375" height="416"/>
                                                 <subviews>
                                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" usesAttributedText="YES" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Onk-1O-ypa">
                                                         <rect key="frame" x="0.0" y="0.0" width="375" height="33"/>
@@ -341,7 +425,7 @@
                                                                                 </attributedString>
                                                                                 <nil key="highlightedColor"/>
                                                                             </label>
-                                                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" usesAttributedText="YES" lineBreakMode="wordWrap" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="9sp-Xa-cDI">
+                                                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="center" horizontalHuggingPriority="251" verticalHuggingPriority="251" usesAttributedText="YES" lineBreakMode="wordWrap" numberOfLines="0" baselineAdjustment="alignBaselines" highlighted="YES" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="9sp-Xa-cDI">
                                                                                 <rect key="frame" x="2" y="125" width="371.5" height="15"/>
                                                                                 <attributedString key="attributedText">
                                                                                     <fragment content="m,m,sm,dms,mds,md,smd,smd,sm,dms,dm,smd,smd,smd,smd,s">
@@ -351,7 +435,7 @@
                                                                                         </attributes>
                                                                                     </fragment>
                                                                                 </attributedString>
-                                                                                <nil key="highlightedColor"/>
+                                                                                <color key="highlightedColor" red="0.94678999352331605" green="0.93327250133452289" blue="0.0046859608051645395" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                                             </label>
                                                                         </subviews>
                                                                     </stackView>
@@ -377,7 +461,7 @@
                                                         </subviews>
                                                     </stackView>
                                                     <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" dataMode="prototypes" translatesAutoresizingMaskIntoConstraints="NO" id="KN0-q9-LzI">
-                                                        <rect key="frame" x="0.0" y="233" width="375" height="179"/>
+                                                        <rect key="frame" x="0.0" y="233" width="375" height="183"/>
                                                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                                         <collectionViewFlowLayout key="collectionViewLayout" scrollDirection="horizontal" minimumLineSpacing="10" minimumInteritemSpacing="10" id="VmY-Om-7Te">
                                                             <size key="itemSize" width="240" height="128"/>
@@ -472,6 +556,7 @@
                                         <barButtonItem key="rightBarButtonItem" title="add review" id="mhB-Zo-PmM">
                                             <connections>
                                                 <action selector="addReview:" destination="UOa-Hc-TgY" id="LXj-Xz-f5b"/>
+                                                <segue destination="Fuh-2s-SvM" kind="presentation" id="bYV-Y5-hnI"/>
                                             </connections>
                                         </barButtonItem>
                                     </navigationItem>

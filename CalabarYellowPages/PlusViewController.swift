@@ -18,6 +18,9 @@ class PlusViewController: UIViewController, UICollectionViewDelegate, UICollecti
     @IBOutlet weak var phoneLabel: UILabel!
     @IBOutlet weak var website: UILabel!
     
+    @IBAction func callMenuButton(_ sender: Any) {
+        callNumber()
+    }
     @IBAction func backButton(_ sender: Any) {
         self.dismiss(animated: true, completion: nil)
     }
@@ -55,7 +58,7 @@ class PlusViewController: UIViewController, UICollectionViewDelegate, UICollecti
         let reviewData = "\(listingModel.review) Reviews"
         reviewLabel.text = reviewData
         website.text = listingModel.Web
-        let tap = UITapGestureRecognizer(target: self, action: #selector(PlusViewController.tapFunction))
+        let tap = UITapGestureRecognizer(target: self, action: #selector(PlusViewController.webTapFunction))
         website.isUserInteractionEnabled = true
         website.addGestureRecognizer(tap)
         self.galleryCollection.delegate = self
@@ -94,14 +97,17 @@ class PlusViewController: UIViewController, UICollectionViewDelegate, UICollecti
     
     func webTapFunction(sender:UITapGestureRecognizer) {
         let url = NSURL(string: listingModel.Web)!
-        UIApplication.sharedApplication().openURL(url)
+        UIApplication.shared.open(url as URL, options: [:], completionHandler: nil)
     }
     
     func phoneTapFunction(sender:UITapGestureRecognizer){
-        if let url = NSURL(string: "tel://\(listingModel.Phone)"), UIApplication.sharedApplication().canOpenURL(url) {
-            UIApplication.sharedApplication().openURL(url)
-        }
         
+        
+    }
+    
+    func callNumber(){
+        let url = NSURL(string: "tel://\(listingModel.Phone)")
+        UIApplication.shared.open(url as! URL, options: [:], completionHandler: nil)
     }
 
 

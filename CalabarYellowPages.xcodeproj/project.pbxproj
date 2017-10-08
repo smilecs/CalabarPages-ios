@@ -31,6 +31,7 @@
 		F6CBE7591DF9DDED003B5DAC /* TabBar.swift in Sources */ = {isa = PBXBuildFile; fileRef = F6CBE7581DF9DDED003B5DAC /* TabBar.swift */; };
 		F6D2658F1DE36A360032DC64 /* CategoryListViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = F6D2658E1DE36A360032DC64 /* CategoryListViewCell.swift */; };
 		F6D265911DE36BCC0032DC64 /* CategoryListController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F6D265901DE36BCC0032DC64 /* CategoryListController.swift */; };
+		F6D8C9A01F88FC3700E35C9E /* ReviewModalViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F6D8C99F1F88FC3700E35C9E /* ReviewModalViewController.swift */; };
 		F6DE6E261DF4CC7A002D20D2 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = F6DE6E251DF4CC7A002D20D2 /* GoogleService-Info.plist */; };
 		F6E827611DE7AE5F004845B6 /* PlusViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F6E827601DE7AE5F004845B6 /* PlusViewController.swift */; };
 /* End PBXBuildFile section */
@@ -74,6 +75,7 @@
 		F6CBE7581DF9DDED003B5DAC /* TabBar.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TabBar.swift; sourceTree = "<group>"; };
 		F6D2658E1DE36A360032DC64 /* CategoryListViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CategoryListViewCell.swift; sourceTree = "<group>"; };
 		F6D265901DE36BCC0032DC64 /* CategoryListController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CategoryListController.swift; sourceTree = "<group>"; };
+		F6D8C99F1F88FC3700E35C9E /* ReviewModalViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ReviewModalViewController.swift; sourceTree = "<group>"; };
 		F6DE6E251DF4CC7A002D20D2 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 		F6DE6E561DF4DA74002D20D2 /* CalabarYellowPages-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "CalabarYellowPages-Bridging-Header.h"; sourceTree = "<group>"; };
 		F6E827601DE7AE5F004845B6 /* PlusViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PlusViewController.swift; sourceTree = "<group>"; };
@@ -166,6 +168,7 @@
 				8050D5BA1F76AC8300C7799C /* ReviewTableViewCell.swift */,
 				8050D5BB1F76AC8300C7799C /* ReviewTableViewCell.xib */,
 				8050D5BE1F779CBE00C7799C /* ReviewModel.swift */,
+				F6D8C99F1F88FC3700E35C9E /* ReviewModalViewController.swift */,
 			);
 			path = CalabarYellowPages;
 			sourceTree = "<group>";
@@ -319,6 +322,7 @@
 				8050D5B91F76AC2500C7799C /* ReviewViewController.swift in Sources */,
 				F602D3BD1DE08CFC00AB0DD6 /* TableViewCell.swift in Sources */,
 				F602D3C51DE0C2AA00AB0DD6 /* PlusViewCell.swift in Sources */,
+				F6D8C9A01F88FC3700E35C9E /* ReviewModalViewController.swift in Sources */,
 				806AFC6C1F6FAB2D00A532A8 /* PlusViewTabBarViewController.swift in Sources */,
 				8050D5BC1F76AC8300C7799C /* ReviewTableViewCell.swift in Sources */,
 				F6D265911DE36BCC0032DC64 /* CategoryListController.swift in Sources */,

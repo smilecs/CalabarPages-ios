@@ -29,6 +29,8 @@ class CategoryListController: UIViewController, UITableViewDelegate, UITableView
         let advertNib = UINib(nibName: "AdvertCell", bundle: nil)
         Tableview.register(nib, forCellReuseIdentifier: "cell")
         Tableview.register(advertNib, forCellReuseIdentifier: "advert")
+        Tableview.rowHeight = UITableViewAutomaticDimension
+        Tableview.estimatedRowHeight = 80
         indicator = UIActivityIndicatorView(frame: CGRect(x: 0, y: 0, width: 40, height: 40))
         indicator.activityIndicatorViewStyle = UIActivityIndicatorViewStyle.gray
         indicator.center = self.view.center
